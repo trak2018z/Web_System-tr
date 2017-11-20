@@ -72,14 +72,21 @@ WSGI_APPLICATION = 'Web_System.wsgi.application'
 
 # Database
 # https://docs.djangoproject.com/en/1.11/ref/settings/#databases
+import pymongo
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        'ENGINE': '',
     }
 }
-
+MONGO_USER="tomel23"
+MONGO_PASSWORD="hvm944g8"
+DATABASE_USER="admin"
+CONECTION_STRING="@cluster0-shard-00-00-ajcw6.mongodb.net:27017,cluster0-shard-00-01-ajcw6.mongodb.net:27017," \
+                 "cluster0-shard-00-02-ajcw6.mongodb.net:27017/test?ssl=true&replicaSet=Cluster0-shard-0&authSource="
+dbclient=pymongo.MongoClient("mongodb://"+MONGO_USER+":"+MONGO_PASSWORD+CONECTION_STRING+DATABASE_USER)
+db = dbclient.database_names()
+print(db)
 # Password validation
 # https://docs.djangoproject.com/en/1.11/ref/settings/#auth-password-validators
 

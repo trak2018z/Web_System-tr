@@ -20,6 +20,7 @@ def singup(request):
         form = SignUpForm(request.POST)
         if form.is_valid():
             form.save()
+            d
 
             # user.refresh_from_db()
             # user.profile.birth_date = form.cleaned_data.get('birth_date')
