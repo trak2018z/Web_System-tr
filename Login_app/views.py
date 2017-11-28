@@ -2,15 +2,11 @@
 Definition of views.
 """
 
-from django.shortcuts import render, redirect
-from django.http.response import HttpResponse
-from django.http import HttpRequest
-from django.template import RequestContext
-from datetime import datetime
 from django.contrib.auth import login, authenticate
-from django.contrib.auth.forms import UserCreationForm
-from Login_app.forms import SignUpForm
+from django.http import HttpRequest
+from django.shortcuts import render, redirect
 
+from Login_app.forms import SignUpForm
 
 def singup(request):
     """Renders the about page."""
