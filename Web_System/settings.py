@@ -81,6 +81,7 @@ import MySQLdb
   #      #  }
    # }
 #}
+#dupa
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
