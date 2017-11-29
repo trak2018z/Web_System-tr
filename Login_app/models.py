@@ -1,17 +1,26 @@
-from mongoengine import *
+from django.contrib.auth.forms import AuthenticationForm
+from django.db import models
+from django.contrib.auth.models import User
+from django.db.models.signals import post_save
+from django.dispatch import receiver
+from django import forms
+from django.contrib.auth.models import User
+from django.contrib.auth.forms import AuthenticationForm, UserCreationForm
+from django.utils.translation import ugettext_lazy as _
 
-class Choice(EmbeddedDocument):
-    choice_text = StringField(max_length=200)
-    votes = IntField(default=0)
 
-class Poll(Document):
-    question = StringField(max_length=200)
-    pub_date = DateTimeField(help_text='date published')
-    choices = ListField(EmbeddedDocumentField(Choice))
 
-    meta = {
-        'indexes': [
-            'question',
-            ('pub_date', '+question')
-        ]
-    }
+
+
+class Profile(models.Model):
+    user = models.OneToOneField(User, on_delete=models.CASCADE)
+    bio = models.TextField(max_length=500, blank=True)
+    location = models.CharField(max_length=30, blank=True)
+    birth_date = models.DateField(null=True, blank=True)
+
+
+@receiver(post_save, sender=User)
+def update_user_profile(sender, instance, created, **kwargs):
+    if created:
+        Profile.objects.create(user=instance)
+    instance.profile.save()

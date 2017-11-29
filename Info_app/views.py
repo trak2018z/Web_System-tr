@@ -6,7 +6,6 @@ from django.shortcuts import render, redirect
 from django.http import HttpRequest
 from datetime import datetime
 
-
 def home(request):
     """Renders the home page."""
     assert isinstance(request, HttpRequest)
@@ -14,11 +13,10 @@ def home(request):
         request,
         'Info_app/home.html',
         {
-            'title': 'Home Page',
+            'title': 'Strona Domowa',
             'year': datetime.now().year,
         }
     )
-
 
 def contact(request):
     """Renders the contact page."""
@@ -32,7 +30,6 @@ def contact(request):
         }
     )
 
-
 def about(request):
     """Renders the about page."""
     assert isinstance(request, HttpRequest)
@@ -40,8 +37,8 @@ def about(request):
         request,
         'Info_app/about.html',
         {
-            'title': 'About',
-            'message': 'Your application description page.',
+            'title': 'O nas',
+            'message': 'Aplikacja wykonana została na potrzeby przedmiotu Aplikacje internetowe.',
             'year': datetime.now().year,
         }
     )

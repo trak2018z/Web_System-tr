@@ -12,7 +12,8 @@ SECRET_KEY = 'l_6gqoe@^f4t@&&*vc9auz%#4yc$d97lpz#8-x@e#cnrz4dqe-'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['tomel23.pythonanywhere.com']
+#ALLOWED_HOSTS = ['tomel23.pythonanywhere.com']
+ALLOWED_HOSTS = []
 # from mongoengine.django.auth import User
 # Application definition
 
@@ -58,41 +59,21 @@ TEMPLATES = [
 WSGI_APPLICATION = 'Web_System.wsgi.application'
 
 # Database
-# https://docs.djangoproject.com/en/1.11/ref/settings/#databases
 
-# MongoDB settings
 import MySQLdb
 
-# db=MySQLdb.connect(
-#   host='tomel23.mysql.pythonanywhere-services.com',
-#   user='tomel23',
-#   passwd='hvm944g8',
-#   db='tomel23$Web_System_Data')
-#DATABASES = {
- #   'default': {
-  #      'ENGINE': 'django.db.backends.mysql',
-  #      'NAME': 'Web_System',
-  #      'USER': 'root',
-  #      'PASSWORD': '',
-  #      'HOST': '127.0.0.1',
-  #      'PORT': '3306',
-  #      # 'TEST':{
-  #      #     'NAME':'tomel23$Web_System_Data'
-  #      #  }
-   # }
-#}
-#dupa
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'tomel23$Web_System_Data',
-        'USER': 'tomel23',
-        'PASSWORD': 'hvm944g8',
-        'HOST': 'tomel23.mysql.pythonanywhere-services.com',
+        # 'NAME': 'tomel23$Web_System_Data',
+        'NAME': 'Web_System',
+        # 'USER': 'tomel23',
+        'USER': 'root',
+        '#PASSWORD': 'hvm944g8',
+        'PASSWORD': '',
+        # 'HOST': 'tomel23.mysql.pythonanywhere-services.com',
+        'HOST': '127.0.0.1',
         'PORT': 3306,
-        # 'TEST':{
-        #     'NAME':'tomel23$Web_System_Data'
-        #  }
     }
 }
 # Password validation

@@ -3,22 +3,22 @@ Definition of views.
 """
 
 from django.contrib.auth import login, authenticate
+from django.contrib.auth.forms import UserCreationForm
 from django.http import HttpRequest
 from django.shortcuts import render, redirect
 
-from Login_app.forms import SignUpForm
+#from Login_app.forms import SignUpForm
 
 def singup(request):
     """Renders the about page."""
     assert isinstance(request, HttpRequest)
 
     if request.method == 'POST':
-        form = SignUpForm(request.POST)
+        form = UserCreationForm(request.POST)
         if form.is_valid():
-            form.save()
+            user = form.save()
 
-
-            # user.refresh_from_db()
+            user.refresh_from_db()
             # user.profile.birth_date = form.cleaned_data.get('birth_date')
             # user.save()
 
@@ -29,7 +29,7 @@ def singup(request):
             return redirect('login')
 
     else:
-        form = SignUpForm()
+        form = UserCreationForm()
 
     return render(
         request, 'Login_app/singup.html', {'form': form})
