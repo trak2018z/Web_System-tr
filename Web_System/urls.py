@@ -13,40 +13,15 @@ Including another URLconf
     1. Import the include() function: from django.conf.urls import url, include
     2. Add a URL to urlpatterns:  url(r'^blog/', include('blog.urls'))
 """
-from datetime import datetime
-import django.contrib.auth.views
-
-import Info_app.views
-import Login_app.forms
-import Login_app.views
-from django.contrib import admin
 from django.conf.urls import url, include
-
+from django.contrib import admin
+from . import views
 admin.autodiscover()
 
 urlpatterns = [
+    url(r'^$', views.home_redirect, name='home_redirect'),
     url(r'^admin/', include(admin.site.urls)),
-    url(r'^$', Info_app.views.home, name='home'),
-    url(r'^contact$', Info_app.views.contact, name='contact'),
-    url(r'^about', Info_app.views.about, name='about'),
-    url(r'^login/$',
-        django.contrib.auth.views.login,
-        {
-            'template_name': 'Login_app/login.html',
-            'authentication_form': Login_app.forms.BootstrapAuthenticationForm,
-            'extra_context':
-                {
-                    'title': 'Logowanie',
-                    'year': datetime.now().year,
-                }
-        },
-        name='login'),
-    url(r'^logout$',
-        django.contrib.auth.views.logout,
-        {
-            'next_page': '/',
-        },
-        name='logout'),
-    url(r'^singup/$', Login_app.views.singup, name='singup'),
-
+    url(r'^account/',include('Account_magnament_app.urls',namespace='Account_magnament_app')),
+    url(r'^home/',include('Info_app.urls',namespace='Info_app')),
+   # url(r'^account/', include('django.contrib.auth.urls'))
 ]

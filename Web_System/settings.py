@@ -14,7 +14,6 @@ DEBUG = True
 
 #ALLOWED_HOSTS = ['tomel23.pythonanywhere.com']
 ALLOWED_HOSTS = []
-# from mongoengine.django.auth import User
 # Application definition
 
 INSTALLED_APPS = [
@@ -24,8 +23,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'Login_app',
     'Info_app',
+    'Account_magnament_app',
 ]
 
 MIDDLEWARE = [
@@ -96,10 +95,13 @@ AUTH_PASSWORD_VALIDATORS = [
 
 # Internationalization
 # https://docs.djangoproject.com/en/1.11/topics/i18n/
+#testing email
+EMAIL_HOST = 'localhost'
+EMAIL_PORT = 1025
 
-LANGUAGE_CODE = 'en-us'
+LANGUAGE_CODE = 'pl'
 
-TIME_ZONE = 'UTC'
+TIME_ZONE = 'Europe/Warsaw'
 
 USE_I18N = True
 
@@ -115,3 +117,6 @@ STATIC_URL = '/static/'
 STATICFILES_DIRS = (
     os.path.join(BASE_DIR, "static"),
 )
+PROJECT_DIR = os.path.dirname(os.path.abspath(__file__))
+STATIC_ROOT = os.path.join(PROJECT_DIR, 'static')
+LOGIN_REDIRECT_URL = '/'
