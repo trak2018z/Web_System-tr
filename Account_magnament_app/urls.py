@@ -61,5 +61,6 @@ urlpatterns = [
         password_reset_complete,
         {'template_name': 'Account_magnament_app/password-reset_complete.html'},
         name='password_reset_complete'),
+    #url(r'^profile/edit1/(?P<slug>[\w-]+)/$', Account_magnament_app.views.view_UserProfile.as_view(), name='edit_profile1'),
 
 ]

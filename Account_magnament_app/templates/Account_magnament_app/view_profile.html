@@ -7,8 +7,8 @@
 {% block content %}
 <p>
 {{ user.username }}
+{{ user.userprofile.city }}
 </p>
-
-
-
+<img src="{{ user.userprofile.image.url }}" width="240">
+<p>{{ form.as_p }}</p>
 {% endblock %}
