@@ -1,29 +1,28 @@
 from django.contrib.auth.models import User
-from django.core.urlresolvers import reverse
 from django.db import models
 from django.utils import timezone
 
 
-class Lista_Zlecen(models.Model):
-    user = models.OneToOneField(User)
-
-    def __str__(self):
-        return self.user.get_username()
-
-    def get_absolute_url(self):
-        return reverse('order:order_detail',kwargs={'pk':self.pk})
-
-class Lista_Adresow(models.Model):
-    user = models.OneToOneField(User)
-
-    def __str__(self):
-        return self.user.get_username()
-
- #   def get_absolute_url(self):
-#        return reverse('order:adres',kwargs={'pk':self.pk})
+# class Lista_Zlecen(models.Model):
+#     user = models.OneToOneField(User)
+#
+#     def __str__(self):
+#         return self.user.get_username()
+#
+#     def get_absolute_url(self):
+#         return reverse('order:order_detail',kwargs={'pk':self.pk})
+#
+# class Lista_Adresow(models.Model):
+#     user = models.OneToOneField(User)
+#
+#     def __str__(self):
+#         return self.user.get_username()
+#
+#  #   def get_absolute_url(self):
+# #        return reverse('order:adres',kwargs={'pk':self.pk})
 
 class Adres(models.Model):
-    lista_adresow = models.ForeignKey(Lista_Adresow, blank=True)
+    user = models.ForeignKey(User, blank=True)
     nazwa = models.CharField(max_length=200,blank=True)
     ulica = models.CharField(max_length=200)
     nr = models.CharField(max_length=20)
@@ -31,7 +30,7 @@ class Adres(models.Model):
     kod_pocztowy = models.CharField(max_length=10)
 
     def __str__(self):
-        return self.pk
+        return self.nazwa
 
 
 class Zlecenie(models.Model):
@@ -42,7 +41,7 @@ class Zlecenie(models.Model):
         (4, 'Dostawa'),
         (5, 'Zrealizowane'),
     )
-    lista_zlecen = models.ForeignKey(Lista_Zlecen, on_delete=models.CASCADE)
+    user = models.ForeignKey(User, on_delete=models.CASCADE)
     adres_odbioru = models.OneToOneField(Adres, related_name='odbior')
     adres_dostawy = models.OneToOneField(Adres, related_name='dostawa')
     status_zlecenia = models.IntegerField(choices=STATUS_CHOICES, default=1)

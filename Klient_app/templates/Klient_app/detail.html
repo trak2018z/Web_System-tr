@@ -3,11 +3,7 @@
 {% block content %}
 
 
-    <ul>
 
-   {% for z in lista_zlecen.zlecenie_set.all %}
-    <p>{{ z.data_zlozenia}} {{ z.status_zlecenia}}</p>
-{% endfor %}
-    </ul>
+<p>{{ zlecenie.adres_dostawy }}</p>
 
 {% endblock %}

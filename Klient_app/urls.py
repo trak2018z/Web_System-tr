@@ -22,6 +22,6 @@ admin.autodiscover()
 
 urlpatterns = [
     url(r'^$', views.IndexView.as_view(), name='Index'),
-    #url(r'^(?P<pk>[0-9]+)/', views.OrderDetailView.as_view(), name='order_detail'),
+    url(r'^(?P<pk>[0-9]+)/', views.OrderDetailView.as_view(), name='order_detail'),
     #url(r'^offer',views.offer, name='offer'),
 ]

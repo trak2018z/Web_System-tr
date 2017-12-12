@@ -4,7 +4,7 @@ Definition of views.
 
 from django.views import generic
 
-from .models import Lista_Zlecen, Zlecenie
+from .models import Zlecenie
 
 
 class IndexView(generic.ListView):
@@ -12,9 +12,9 @@ class IndexView(generic.ListView):
     context_object_name = 'order_list'
 
     def get_queryset(self):
-        return Zlecenie.objects.all()
+        return Zlecenie.objects.filter(user=self.request.user)
 
 
 class OrderDetailView(generic.DetailView):
-    model = Lista_Zlecen
+    model = Zlecenie
     template_name = 'Klient_app/detail.html'

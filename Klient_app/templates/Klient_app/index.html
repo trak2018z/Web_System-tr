@@ -4,8 +4,8 @@
 
 
     <ul>
-    {% for ored in order_list %}
-    <li>{{ ored.pk }} </li>
+    {% for order in order_list %}
+    <li><a href="{% url 'order:order_detail' order.id%}">{{ order.pk }}</a> </li>
     {% endfor %}
     </ul>
 
