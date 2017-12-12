@@ -1,0 +1,12 @@
+{% extends "layout.html" %}
+
+{% block content %}
+
+
+    <ul>
+    {% for ored in order_list %}
+    <li>{{ ored.pk }} </li>
+    {% endfor %}
+    </ul>
+
+{% endblock %}

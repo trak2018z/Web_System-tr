@@ -13,9 +13,7 @@ Including another URLconf
     1. Import the include() function: from django.conf.urls import url, include
     2. Add a URL to urlpatterns:  url(r'^blog/', include('blog.urls'))
 """
-from django.conf import settings
-from django.conf.urls import url, include
-from django.conf.urls.static import static
+from django.conf.urls import url
 from django.contrib import admin
 
 from . import views
@@ -23,10 +21,7 @@ from . import views
 admin.autodiscover()
 
 urlpatterns = [
-    url(r'^$', views.home_redirect, name='home_redirect'),
-    url(r'^admin/', include(admin.site.urls)),
-    url(r'^account/',include('Account_magnament_app.urls',namespace='Account_magnament_app')),
-    url(r'^home/',include('Info_app.urls',namespace='Info_app')),
-    url(r'^order/', include('Klient_app.urls', namespace='order')),
-   # url(r'^account/', include('django.contrib.auth.urls'))
-]+ static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+    url(r'^$', views.IndexView.as_view(), name='Index'),
+    #url(r'^(?P<pk>[0-9]+)/', views.OrderDetailView.as_view(), name='order_detail'),
+    #url(r'^offer',views.offer, name='offer'),
+]

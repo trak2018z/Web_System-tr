@@ -1,15 +1,16 @@
 from datetime import datetime
+
+from django.conf.urls import url
+from django.contrib import admin
 from django.contrib.auth.views import (
     login,
     logout,
-    password_change,
     password_reset,
     password_reset_done,
     password_reset_confirm,
     password_reset_complete)
+
 import Account_magnament_app.views
-from django.contrib import admin
-from django.conf.urls import url, include
 
 admin.autodiscover()
 
@@ -62,5 +63,4 @@ urlpatterns = [
         {'template_name': 'Account_magnament_app/password-reset_complete.html'},
         name='password_reset_complete'),
     #url(r'^profile/edit1/(?P<slug>[\w-]+)/$', Account_magnament_app.views.view_UserProfile.as_view(), name='edit_profile1'),
-
 ]
