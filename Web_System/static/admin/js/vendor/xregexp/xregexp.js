@@ -207,7 +207,7 @@ XRegExp = XRegExp || (function (undef) {
     }
 
 /**
- * Runs built-in/custom.css tokens in reverse insertion order, until a match is found.
+ * Runs built-in/custom tokens in reverse insertion order, until a match is found.
  * @private
  * @param {String} pattern Original pattern from which an XRegExp object is being built.
  * @param {Number} pos Position to search for tokens within `pattern`.
@@ -351,7 +351,7 @@ XRegExp = XRegExp || (function (undef) {
         });
 
         while (pos < pattern.length) {
-            // Check for custom.css tokens at the current position
+            // Check for custom tokens at the current position
             tokenResult = runTokens(pattern, pos, scope, tokenContext);
             if (tokenResult) {
                 output.push(tokenResult.output);
@@ -408,7 +408,7 @@ XRegExp = XRegExp || (function (undef) {
     };
 
 /**
- * Extends or changes XRegExp syntax and allows custom.css flags. This is used internally and can be
+ * Extends or changes XRegExp syntax and allows custom flags. This is used internally and can be
  * used to create XRegExp addons. `XRegExp.install('extensibility')` must be run before calling
  * this function, or an error is thrown. If more than one token can match the same string, the last
  * added wins.
@@ -1000,7 +1000,7 @@ XRegExp = XRegExp || (function (undef) {
                 var args = arguments, i;
                 if (captureNames) {
                     // Change the `arguments[0]` string primitive to a `String` object that can store properties
-                    args[0] = new String(args[0]);
+                    args[0] = String(args[0]);
                     // Store named backreferences on the first argument
                     for (i = 0; i < captureNames.length; ++i) {
                         if (captureNames[i]) {

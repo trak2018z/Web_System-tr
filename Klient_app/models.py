@@ -22,7 +22,7 @@ from django.utils import timezone
 # #        return reverse('order:adres',kwargs={'pk':self.pk})
 
 class Adres(models.Model):
-    user = models.ForeignKey(User, blank=True)
+    user = models.ForeignKey(User, blank=True,null=True)
     nazwa = models.CharField(max_length=200,blank=True)
     ulica = models.CharField(max_length=200)
     nr = models.CharField(max_length=20)
@@ -34,20 +34,28 @@ class Adres(models.Model):
 
 
 class Zlecenie(models.Model):
+    NOWE=1
+    PRZYJETE=2
+    DO_ODBIORU=3
+    DOSTAWA=4
+    ZREALIZOWANE=5
+
     STATUS_CHOICES = (
-        (1, 'Nowe'),
-        (2, 'Przyjete'),
-        (3, 'W oczekiwaniu na odbior'),
-        (4, 'Dostawa'),
-        (5, 'Zrealizowane'),
+        (NOWE, 'Nowe'),
+        (PRZYJETE, 'Przyjete'),
+        (DO_ODBIORU, 'W oczekiwaniu na odbior'),
+        (DOSTAWA, 'Dostawa'),
+        (ZREALIZOWANE, 'Zrealizowane'),
     )
     user = models.ForeignKey(User, on_delete=models.CASCADE)
-    adres_odbioru = models.OneToOneField(Adres, related_name='odbior')
-    adres_dostawy = models.OneToOneField(Adres, related_name='dostawa')
+    adres_odbioru = models.ForeignKey(Adres, related_name='odbior')
+    adres_dostawy = models.ForeignKey(Adres, related_name='dostawa')
     status_zlecenia = models.IntegerField(choices=STATUS_CHOICES, default=1)
     data_zlozenia = models.DateTimeField(default=timezone.now())
     data_odbioru = models.DateTimeField()
     data_dostarczenia = models.DateTimeField()
+    wartosc=models.FloatField(default=0.0)
+    faktura=models.IntegerField(default=0)
 
     #def __str__(self):
      #   return self.lista_zlecen.user.

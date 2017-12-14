@@ -1808,7 +1808,7 @@ Expr = Sizzle.selectors = {
 		"PSEUDO": function( pseudo, argument ) {
 			// pseudo-class names are case-insensitive
 			// http://www.w3.org/TR/selectors/#pseudo-classes
-			// Prioritize by case sensitivity in case custom.css pseudos are added with uppercase letters
+			// Prioritize by case sensitivity in case custom pseudos are added with uppercase letters
 			// Remember that setFilters inherits from pseudos
 			var args,
 				fn = Expr.pseudos[ pseudo ] || Expr.setFilters[ pseudo.toLowerCase() ] ||
@@ -3992,7 +3992,7 @@ jQuery.fn.extend( {
 				}
 
 				// Attempt to "discover" the data in
-				// HTML5 custom.css data-* attrs
+				// HTML5 custom data-* attrs
 				data = dataAttr( elem, camelKey, undefined );
 				if ( data !== undefined ) {
 					return data;
@@ -4524,7 +4524,7 @@ jQuery.event = {
 			return;
 		}
 
-		// Caller can pass in an object of custom.css data in lieu of the handler
+		// Caller can pass in an object of custom data in lieu of the handler
 		if ( handler.handler ) {
 			handleObjIn = handler;
 			handler = handleObjIn.handler;
@@ -7008,7 +7008,7 @@ jQuery.each( [ "toggle", "show", "hide" ], function( i, name ) {
 	};
 } );
 
-// Generate shortcuts for custom.css animations
+// Generate shortcuts for custom animations
 jQuery.each( {
 	slideDown: genFx( "show" ),
 	slideUp: genFx( "hide" ),
@@ -8025,7 +8025,7 @@ var
 	rprotocol = /^\/\//,
 
 	/* Prefilters
-	 * 1) They are useful to introduce custom.css dataTypes (see ajax/jsonp.js for an example)
+	 * 1) They are useful to introduce custom dataTypes (see ajax/jsonp.js for an example)
 	 * 2) These are called:
 	 *    - BEFORE asking for a transport
 	 *    - AFTER param serialization (s.data is a string if s.processData is true)
@@ -8354,7 +8354,7 @@ jQuery.extend( {
 		},
 
 		// For options that shouldn't be deep extended:
-		// you can add your own custom.css options here if
+		// you can add your own custom options here if
 		// and when you create one that shouldn't be
 		// deep extended (see ajaxExtend)
 		flatOptions: {
@@ -8637,7 +8637,7 @@ jQuery.extend( {
 			jqXHR.setRequestHeader( i, s.headers[ i ] );
 		}
 
-		// Allow custom.css headers/mimetypes and early abort
+		// Allow custom headers/mimetypes and early abort
 		if ( s.beforeSend &&
 			( s.beforeSend.call( callbackContext, jqXHR, s ) === false || state === 2 ) ) {
 
@@ -9097,7 +9097,7 @@ jQuery.ajaxTransport( function( options ) {
 					options.password
 				);
 
-				// Apply custom.css fields if provided
+				// Apply custom fields if provided
 				if ( options.xhrFields ) {
 					for ( i in options.xhrFields ) {
 						xhr[ i ] = options.xhrFields[ i ];
