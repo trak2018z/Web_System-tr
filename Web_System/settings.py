@@ -26,6 +26,7 @@ INSTALLED_APPS = [
     'Info_app',
     'Account_magnament_app',
     'Klient_app',
+    'widget_tweaks',
 ]
 
 MIDDLEWARE = [

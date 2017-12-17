@@ -1,0 +1,38 @@
+{% load widget_tweaks %}
+<form class="form" action="{% url 'order:nowy_adres' %}" method="post" id="nowy_adres" enctype="multipart/form-data">
+    {% csrf_token %}
+    <div class="modal-dialog">
+        <div class="modal-content">
+
+            <!-- Modal Header -->
+            <div class="modal-header">
+                <h4 class="modal-title">Modal Heading</h4>
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+            </div>
+            <!-- Modal body -->
+            <div class="modal-body">
+                {% for field in form %}
+                    <fieldset class="form-group">
+                        <div class="col-sm offset-2 col-sm-10">
+                            <span class="text-danger small">{{ field.errors }}</span>
+                        </div>
+                        <label>{{ field.label_tag }}</label>
+                        {{ field }}
+                    </fieldset>
+                {% endfor %}
+            </div>
+            <!-- Modal footer -->
+            <div class="modal-footer">
+                <button type="submit" class="btn btn-success">dodaj</button>
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</form>
+<script>
+    var form_options = {
+        target: '#modal', success: function (response) {
+        }
+    };
+    $('#nowy_adres').ajaxForm(form_options);
+</script>

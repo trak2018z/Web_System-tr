@@ -21,7 +21,9 @@ from . import views
 admin.autodiscover()
 
 urlpatterns = [
-    url(r'^$', views.AdresView.as_view(), name='Index'),
-    url(r'^(?P<pk>[0-9]+)/', views.OrderDetailView.as_view(), name='order_detail'),
-    #url(r'^offer',views.offer, name='offer'),
+    url(r'^$', views.AdresView.as_view(), name='lista_adresow'),
+    # .order/dodaj_adres
+    url(r'^nowy_adres/$', views.AdresCreateView.as_view(), name='nowy_adres'),
+    url(r'^(?P<pk>[0-9]+)/', views.OrderDetailView.as_view(), name='szczegoly_zamowienia'),
+    # url(r'^offer',views.offer, name='offer'),
 ]
