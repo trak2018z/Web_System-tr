@@ -1,5 +1,6 @@
 from django.contrib.auth.models import User
 from django.db import models
+from django.urls import reverse
 from django.utils import timezone
 
 
@@ -22,8 +23,8 @@ from django.utils import timezone
 # #        return reverse('order:adres',kwargs={'pk':self.pk})
 
 class Adres(models.Model):
-    user = models.ForeignKey(User, blank=True,null=True)
-    nazwa = models.CharField(max_length=200,blank=True)
+    user = models.ForeignKey(User, blank=True, null=True)
+    nazwa = models.CharField(max_length=200, blank=True)
     ulica = models.CharField(max_length=200)
     nr = models.CharField(max_length=20)
     miasto = models.CharField(max_length=200)
@@ -32,13 +33,16 @@ class Adres(models.Model):
     def __str__(self):
         return self.nazwa
 
+    def get_absolute_url(self):
+        return reverse('Adres_app:lista_adresow', kwargs={'pk': self.pk})
+
 
 class Zlecenie(models.Model):
-    NOWE=1
-    PRZYJETE=2
-    DO_ODBIORU=3
-    DOSTAWA=4
-    ZREALIZOWANE=5
+    NOWE = 1
+    PRZYJETE = 2
+    DO_ODBIORU = 3
+    DOSTAWA = 4
+    ZREALIZOWANE = 5
 
     STATUS_CHOICES = (
         (NOWE, 'Nowe'),
@@ -54,8 +58,8 @@ class Zlecenie(models.Model):
     data_zlozenia = models.DateTimeField(default=timezone.now())
     data_odbioru = models.DateTimeField()
     data_dostarczenia = models.DateTimeField()
-    wartosc=models.FloatField(default=0.0)
-    faktura=models.IntegerField(default=0)
+    wartosc = models.FloatField(default=0.0)
+    faktura = models.IntegerField(default=0)
 
-    #def __str__(self):
-     #   return self.lista_zlecen.user.
+    # def __str__(self):
+    #   return self.lista_zlecen.user.

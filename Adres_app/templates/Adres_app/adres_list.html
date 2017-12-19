@@ -7,9 +7,17 @@
             <h1>Ksiazka adresowa</h1>
 
             <hr>
+            <div class="row">
+                <!-- przycisk dodaj -->
+                <div class="col-lg-10">
+                    <a onclick="return abrir_modal('{% url 'Adres_app:nowy_adres' %}')" class="btn btn-primary">
+                        Nowy adres
+                    </a>
+                </div>
+            </div>
 
             <div class="table-responsive">
-                <table class="table table-responsive-sm" id="adres_table">
+                <table class="table table-responsive-sm" id="tablica_adresow">
                     <thead>
                     <tr>
                         <th>#</th>
@@ -31,16 +39,22 @@
                             <td>{{ adres.kod_pocztowy }}</td>
                             <td>{{ adres.miasto }}</td>
                             <td>
-                                <button type="button"
-                                        class="btn btn-warning btn-sm js-edytuj-adres"
-                                        data-url="{% url 'Adres_app:edytuj_adres' adres.id %}">
+                                <a onclick="return abrir_modal('{% url 'Adres_app:edytuj_adres' adres.pk %}')"
+                                   class="btn btn-warning btn-sm js-edytuj-adres">
                                     Edytuj
-                                </button>
-                                <button type="button"
-                                        class="btn btn-danger btn-sm js-usun-adres"
-                                        data-url="{% url 'Adres_app:usun_adres' adres.id %}">
-                                    Usun
-                                </button>
+                                </a>
+                                <form action="{% url 'Adres_app:usun_adres' adres.pk %}" method="post"
+                                      style="display: inline;">
+                                    {% csrf_token %}
+                                    <input type="hidden" name="adres.pk" value="{{ adres.pk }}"/>
+                                    <button type="submit" class="btn btn-sm">
+                                        Usun
+                                    </button>
+
+                                </form>
+
+
+                                </a>
                             </td>
                         </tr>
                     {% endfor %}
@@ -52,76 +66,27 @@
 
     </div>
 
+    <!--modal-->
 
-    <div class="container">
-        <h2>Modal Example</h2>
-        <!-- Button to Open the Modal -->
-        <p>
-            <button type="button" class="btn btn-primary js-dodaj-adres">
-                <a data-toggle="modal" data-target="#modal" href="{% url 'Adres_app:nowy_adres' %}">here</a>
-            </button>
-        </p>
-
-
-        <div class="modal fade " id="modal">
-
-        </div>
+    <div id="Modal" class="modal fade" role="dialog">
     </div>
-
-
     <script>
-        $('#modal').on('show.bs.modal', function (event) {
-            var modal = $(this);
-            $.ajax({
-                url: "{% url 'Adres_app:nowy_adres' %}",
-                context: document.body,
-            }).done(function (response) {
-                modal.html(response);
+        function abrir_modal(url) {
+            $('#Modal').load(url, function () {
+                $(this).modal('show');
             });
-        })
-    </script>
-    <script>
-        $(function () {
-            var loadForm = function () {
-                var btn = $(this);
-                $.ajax({
-                    url: btn.attr("data-url"),
-                    type: 'get',
-                    dataType: 'json',
-                    beforeSend: function () {
-                        $("#modal").modal("show");
-                    },
-                    success: function (data) {
-                        $("#modal .modal-content").html(data.html_form);
-                    }
-                });
-            };
+            return false;
+        }
 
-            var saveForm = function () {
-                var form = $(this);
-                $.ajax({
-                    url: form.attr("action"),
-                    data: form.serialize(),
-                    type: form.attr("method"),
-                    dataType: 'json',
-                    success: function (data) {
-                        if (data.form_is_valid) {
-                            $("#adres_table tbody").html(data.html_adres_list);
-                            $("#modal").modal("hide");
-                        }
-                        else {
-                            $("#modal-book .modal-content").html(data.html_form);
-                        }
-                    }
-                });
-                return false;
-            };
-            $(".js-create-book").click(loadForm);
-            $("#modal").on("submit", ".js-book-create-form", saveForm);
+        function nowy_adres() {
+            $('#Modal').modal('hide');
+            return false;
+        }
 
-            // Update book
-            $("#adres_table").on("click", ".jsadres_table", loadForm);
-            $("#modal").on("submit", ".jsadres_table", saveForm);
+        $(document).ready(function () {
+            var table = $('#tablica_adresow').dataTable({});
         });
     </script>
+
+
 {% endblock %}

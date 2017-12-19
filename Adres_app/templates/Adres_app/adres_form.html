@@ -1,43 +1,35 @@
-{% load widget_tweaks %}
-<form class="form" action="{% url 'Adres_app:nowy_adres' %}" method="post" id="nowy_adres"
-      enctype="multipart/form-data">
-    {% csrf_token %}
-    <div class="modal-dialog" role="document">
-        <div class="modal-content">
-
-            <!-- Modal Header -->
+<div class="modal-dialog modal-lg">
+    <div class="modal-content">
+        {% if adres %}
+            <form role="form" action="{% url 'Adres_app:edytuj_adres' adres.pk %}" method="post">
             <div class="modal-header">
-                <h4 class="modal-title">Modal Heading</h4>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                </button>
+                <button type="button" class="close" data-dismiss="modal">x</button>
+                <h3>Edytuj adres</h3>
             </div>
-            <!-- Modal body -->
-            <div class="modal-body">
-                {% for field in form %}
-                    <fieldset class="form-group">
-                        <div class="col-sm offset-2 col-sm-10">
-                            <span class="text-danger small">{{ field.errors }}</span>
-                        </div>
-                        <label>{{ field.label_tag }}</label>
-                        {{ field }}
-                    </fieldset>
-                {% endfor %}
+        {% else %}
+            <form role="form" action="{% url 'Adres_app:nowy_adres' %}" method="post">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">x</button>
+                <h3>Nowy adres</h3>
             </div>
-            <!-- Modal footer -->
-            <div class="modal-footer">
-                <button type="submit" class="btn btn-success">dodaj</button>
-                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        {% endif %}
+
+        <div class="modal-body">
+            {% csrf_token %}
+            <div class="panel panel-default">
+                <div class="panel-body">
+                    {{ form.as_p }}
+                </div>
             </div>
         </div>
+        <div class="modal-footer">
+            <div class="col-lg-12 text-right">
+                <input type="submit" class="btn btn-primary" name="submit" value="Zapisz">
+                <button type="button" class="btn btn-default" onclick="return nowy_adres()">
+                    Anuluj
+                </button>
+            </div>
+        </div>
+        </form>
     </div>
-
-</form>
-<script>
-    $("#modal").modal("hide");
-    var form_options = {
-        target: '#modal', success: function (response) {
-        }
-    };
-    $('#nowy_adres').ajaxForm(form_options);
-</script>
+</div>

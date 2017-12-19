@@ -32,7 +32,8 @@ class AdresView(generic.ListView):
 
 class AdresCreateView(generic.CreateView):
     model = Adres
-    template_name = 'Adres_app/adres_list.html'
+    template_name = 'Adres_app/adres_form.html'
+    success_url = reverse_lazy('Adres_app:lista_adresow')
     fields = ['nazwa', 'ulica', 'nr', 'kod_pocztowy', 'miasto']
 
     def form_valid(self, form):
@@ -44,7 +45,8 @@ class AdresCreateView(generic.CreateView):
 
 class AdresUpdateView(generic.UpdateView):
     model = Adres
-    template_name = 'Adres_app/adres_list.html'
+    template_name = 'Adres_app/adres_form.html'
+    success_url = reverse_lazy('Adres_app:lista_adresow')
     fields = ['nazwa', 'ulica', 'nr', 'kod_pocztowy', 'miasto']
 
 
