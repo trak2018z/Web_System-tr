@@ -22,8 +22,12 @@ admin.autodiscover()
 
 urlpatterns = [
     url(r'^$', views.AdresView.as_view(), name='lista_adresow'),
-    # .order/dodaj_adres
+    # .adres/dodaj_adres
     url(r'^nowy_adres/$', views.AdresCreateView.as_view(), name='nowy_adres'),
-    url(r'^(?P<pk>[0-9]+)/', views.OrderDetailView.as_view(), name='szczegoly_zamowienia'),
+    # .adres/edytuj_adres
+    url(r'^(?P<pk>[0-9]+)/$', views.AdresUpdateView.as_view(), name='edytuj_adres'),
+    # .adres/usun_adres
+    url(r'^(?P<pk>[0-9]+)/usun$', views.AdresDeletaView.as_view(), name='usun_adres'),
+    # url(r'^(?P<pk>[0-9]+)/', views.OrderDetailView.as_view(), name='szczegoly_zamowienia'),
     # url(r'^offer',views.offer, name='offer'),
 ]

@@ -1,18 +1,15 @@
 """
 Definition of views.
 """
-from datetime import timezone
 
 from django.contrib.auth import update_session_auth_hash
 from django.contrib.auth.forms import PasswordChangeForm
 from django.http import HttpRequest
-from django.shortcuts import render, redirect, render_to_response, get_object_or_404
-from django.template import RequestContext
+from django.shortcuts import render, redirect
 from django.views import generic
-from django.views.generic import TemplateView
 
-from Account_magnament_app.forms import Edit_Profile_Form, SignUpForm, UserProfile_Form
-from Account_magnament_app.models import UserProfile
+from Account_app.forms import Edit_Profile_Form, SignUpForm
+from Account_app.models import UserProfile
 
 
 def singup(request):
@@ -35,12 +32,12 @@ def singup(request):
         form = SignUpForm()
         # form = UserCreationForm()
 
-    return render(request, 'Account_magnament_app/singup.html', {'form': form})
+    return render(request, 'Account_app/singup.html', {'form': form})
 
 
 def view_profile(request):
     args = {'user': request.user}
-    return render(request, 'Account_magnament_app/view_profile.html', args)
+    return render(request, 'Account_app/view_profile.html', args)
 
 
 def edit_profile(request):
@@ -49,11 +46,11 @@ def edit_profile(request):
 
         if form.is_valid():
             form.save()
-            return redirect('Account_magnament_app/view_profile.html')
+            return redirect('Account_app/view_profile.html')
     else:
         form = Edit_Profile_Form(instance=request.user)
         args = {'form': form}
-        return render(request, 'Account_magnament_app/view_profile.html', args)
+        return render(request, 'Account_app/view_profile.html', args)
 
 
 def change_password(request):
@@ -63,16 +60,16 @@ def change_password(request):
         if form.is_valid():
             form.save()
             update_session_auth_hash(request, form.user)
-            return redirect('Account_magnament_app/view_profile.html')
+            return redirect('Account_app/view_profile.html')
         else:
-            return redirect('Account_magnament_app/change_password.html')
+            return redirect('Account_app/change_password.html')
     else:
         form = PasswordChangeForm(user=request.user)
         args = {'form': form}
-        return render(request, 'Account_magnament_app/change_password.html', args)
+        return render(request, 'Account_app/change_password.html', args)
 
 class view_UserProfile(generic.DetailView):
-    template_name = 'Account_magnament_app/Userprofileedit.html'
+    template_name = 'Account_app/Userprofileedit.html'
     model = UserProfile
 
     slug_field = 'username'

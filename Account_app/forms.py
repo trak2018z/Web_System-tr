@@ -3,7 +3,7 @@ from django.contrib.auth.forms import UserChangeForm
 from django.contrib.auth.forms import UserCreationForm, AuthenticationForm
 from django.contrib.auth.models import User
 
-from Account_magnament_app.models import UserProfile
+from Account_app.models import UserProfile
 
 
 class BootstrapAuthenticationForm(AuthenticationForm):

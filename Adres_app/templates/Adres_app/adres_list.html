@@ -1,0 +1,127 @@
+{% extends "layout.html" %}
+{% load widget_tweaks %}
+{% block content %}
+    <div class="container">
+        <div class="row">
+
+            <h1>Ksiazka adresowa</h1>
+
+            <hr>
+
+            <div class="table-responsive">
+                <table class="table table-responsive-sm" id="adres_table">
+                    <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>Nazwa</th>
+                        <th>Ulica</th>
+                        <th>Nr lokalu</th>
+                        <th>Kod pocztowy</th>
+                        <th>Miejscowosc</th>
+                        <th></th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    {% for adres in lista_adresow %}
+                        <tr>
+                            <td>{{ adres.pk }}</td>
+                            <td>{{ adres.nazwa }}</td>
+                            <td>{{ adres.ulica }}</td>
+                            <td>{{ adres.nr }}</td>
+                            <td>{{ adres.kod_pocztowy }}</td>
+                            <td>{{ adres.miasto }}</td>
+                            <td>
+                                <button type="button"
+                                        class="btn btn-warning btn-sm js-edytuj-adres"
+                                        data-url="{% url 'Adres_app:edytuj_adres' adres.id %}">
+                                    Edytuj
+                                </button>
+                                <button type="button"
+                                        class="btn btn-danger btn-sm js-usun-adres"
+                                        data-url="{% url 'Adres_app:usun_adres' adres.id %}">
+                                    Usun
+                                </button>
+                            </td>
+                        </tr>
+                    {% endfor %}
+                    </tbody>
+                </table>
+            </div>
+            </main>
+        </div>
+
+    </div>
+
+
+    <div class="container">
+        <h2>Modal Example</h2>
+        <!-- Button to Open the Modal -->
+        <p>
+            <button type="button" class="btn btn-primary js-dodaj-adres">
+                <a data-toggle="modal" data-target="#modal" href="{% url 'Adres_app:nowy_adres' %}">here</a>
+            </button>
+        </p>
+
+
+        <div class="modal fade " id="modal">
+
+        </div>
+    </div>
+
+
+    <script>
+        $('#modal').on('show.bs.modal', function (event) {
+            var modal = $(this);
+            $.ajax({
+                url: "{% url 'Adres_app:nowy_adres' %}",
+                context: document.body,
+            }).done(function (response) {
+                modal.html(response);
+            });
+        })
+    </script>
+    <script>
+        $(function () {
+            var loadForm = function () {
+                var btn = $(this);
+                $.ajax({
+                    url: btn.attr("data-url"),
+                    type: 'get',
+                    dataType: 'json',
+                    beforeSend: function () {
+                        $("#modal").modal("show");
+                    },
+                    success: function (data) {
+                        $("#modal .modal-content").html(data.html_form);
+                    }
+                });
+            };
+
+            var saveForm = function () {
+                var form = $(this);
+                $.ajax({
+                    url: form.attr("action"),
+                    data: form.serialize(),
+                    type: form.attr("method"),
+                    dataType: 'json',
+                    success: function (data) {
+                        if (data.form_is_valid) {
+                            $("#adres_table tbody").html(data.html_adres_list);
+                            $("#modal").modal("hide");
+                        }
+                        else {
+                            $("#modal-book .modal-content").html(data.html_form);
+                        }
+                    }
+                });
+                return false;
+            };
+            $(".js-create-book").click(loadForm);
+            $("#modal").on("submit", ".js-book-create-form", saveForm);
+
+            // Update book
+            $("#adres_table").on("click", ".jsadres_table", loadForm);
+            $("#modal").on("submit", ".jsadres_table", saveForm);
+        });
+    </script>
+{% endblock %}

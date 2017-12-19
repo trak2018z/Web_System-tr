@@ -1,6 +1,7 @@
 {% if user.is_authenticated %}
-<form id="logoutForm" action="{% url 'Account_magnament_app:logout' %}" method="post" class="navbar-right">
+    <form id="logoutForm" action="{% url 'Account_app:logout' %}" method="post" class="navbar-right">
     {% csrf_token %}
+
     <ul class="nav navbar-nav navbar-right">
         <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="http://example.com" id="navbarDropdownMenuLink"
@@ -8,7 +9,7 @@
                             class="caret"></span>
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                        <a class="dropdown-item" href="{% url 'Account_magnament_app:profile' %}">Profil</a>
+                        <a class="dropdown-item" href="{% url 'Account_app:profile' %}">Profil</a>
                         <a class="dropdown-item" href="javascript:document.getElementById('logoutForm').submit()">Wyloguj</a>
                       <!--  <a class="dropdown-item" href="#">Something else here</a>-->
                     </div>
@@ -20,8 +21,8 @@
 {% else %}
 
 <ul class="nav navbar-nav navbar-right">
-    <li><a href="{% url 'Account_magnament_app:login' %}">Logowanie</a></li>
-    <li><a href="{% url 'Account_magnament_app:singup' %}">Rejestracja</a></li>
+    <li><a href="{% url 'Account_app:login' %}">Logowanie</a></li>
+    <li><a href="{% url 'Account_app:singup' %}">Rejestracja</a></li>
 </ul>
 
 {% endif %}
