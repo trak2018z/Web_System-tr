@@ -23,10 +23,12 @@ from . import views
 admin.autodiscover()
 
 urlpatterns = [
-    url(r'^$', views.home_redirect, name='home_redirect'),
-    url(r'^admin/', include(admin.site.urls)),
+                  url(r'^$', views.home_redirect, name='home_redirect'),
+                  url(r'^admin/', include(admin.site.urls)),
                   url(r'^account/', include('Account_app.urls', namespace='Account_app')),
-    url(r'^home/',include('Info_app.urls',namespace='Info_app')),
+                  url(r'^home/', include('Info_app.urls', namespace='Info_app')),
                   url(r'^adres/', include('Adres_app.urls', namespace='Adres_app')),
-   # url(r'^account/', include('django.contrib.auth.urls'))
-]+ static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+                  url(r'^zlecenia/', include('Zlecenie_app.urls', namespace='Zlecenie_app')),
+                  # url(r'^account/', include('django.contrib.auth.urls'))
+
+              ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

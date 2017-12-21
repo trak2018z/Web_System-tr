@@ -1,0 +1,111 @@
+{% extends "layout.html" %}
+{% block content %}
+    <div class="row">
+
+        <h1>Twoje zlecenia</h1>
+
+        <hr>
+
+        <div>
+            <table class="table table-responsive-md " style="grid-column-gap:0px ">
+                <thead>
+                <tr>
+                    <th>Nr</th>
+                    <th>Klient</th>
+                    <th>Data zlozenia</th>
+                    <th>Data odbioru</th>
+                    <th>Data dostwy</th>
+                    <th>Status</th>
+                    <th>Wartosc</th>
+                    <th>e-Faktura</th>
+                    <th></th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>{{ zlecenie.pk }}</td>
+                    <td>{{ zlecenie.user.username }}</td>
+                    <td>{{ zlecenie.data_zlozenia }}</td>
+                    <td>{{ zlecenie.data_odbioru }}</td>
+                    <td>{{ zlecenie.data_dostarczenia }}</td>
+                    <td>{{ zlecenie.get_status_zlecenia_display }}</td>
+                    <td>{{ zlecenie.wartosc }}</td>
+                    <td>{{ zlecenie.faktura }}</td>
+                    <td>
+                        <button type="button" class="btn btn-warning btn-sm"
+                                onclick="return abrir_modal('{% url 'Zlecenie_app:edytuj_zlecenie' zlecenie.pk %}')"
+                                data-toggle="modal" data-target="#Modal">
+                            Edytuj
+                        </button>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-4">
+                    <p><h5>Adres odbioru</h5></p>
+                    <p>{{ zlecenie.adres_odbioru.nazwa }} </p>
+                    <p>{{ zlecenie.adres_odbioru.ulica }} {{ zlecenie.adres_odbioru.nr }}</p>
+                    <p>{{ zlecenie.adres_odbioru.kod_pocztowy }} {{ zlecenie.adres_odbioru.miasto }}</p>
+                    <button type="button" class="btn btn-warning btn-sm"
+                            onclick="return adres_modal('{% url 'Zlecenie_app:edytuj_adres' zlecenie.adres_odbioru.pk %}')"
+                            data-toggle="modal" data-target="#AdresModal">
+                        Edytuj
+                    </button>
+                </div>
+                <div class="col-4">
+                    <p><h5>Adres dostawy</h5></p>
+                    <p>{{ zlecenie.adres_dostawy.nazwa }}</p>
+                    <p>{{ zlecenie.adres_dostawy.ulica }} {{ zlecenie.adres_dostawy.nr }}</p>
+                    <p>{{ zlecenie.adres_dostawy.kod_pocztowy }} {{ zlecenie.adres_dostawy.miasto }}</p>
+
+                    <button type="button" class="btn btn-warning btn-sm"
+                            onclick="return abrir_modal('{% url 'Zlecenie_app:edytuj_zlecenie' zlecenie.pk %}')"
+                            data-toggle="modal" data-target="#Modal">
+                        Edytuj
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <p>
+
+        <a class="btn btn-primary" href="{% url 'Zlecenie_app:lista_zlecen' %}">Wroc do listy zlecen</a>
+    </p>
+
+    <div class="modal" id="Modal" tabindex="-1" role="dialog"></div>
+
+    <div class="modal" id="AdresModal" tabindex="0" role="dialog"></div>
+    <script>
+        function abrir_modal(url) {
+            $('#Modal').load(url, function () {
+                $(this).modal('show');
+            });
+            return false;
+        }
+
+        function ukryj_modal() {
+            $('#Modal').modal('hide');
+            return false;
+        }
+
+        function adres_modal(url) {
+            $('#AdresModal').load(url, function () {
+                $(this).modal('show');
+            });
+            return false;
+        }
+
+        function ukryj_modalAdres() {
+            $('#Modal').modal('hide');
+            return false;
+        }
+
+        $(document).ready(function () {
+            var table = $('#tablica_adresow').dataTable({});
+        });
+    </script>
+
+{% endblock %}

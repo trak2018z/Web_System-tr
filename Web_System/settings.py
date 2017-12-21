@@ -12,7 +12,7 @@ SECRET_KEY = 'l_6gqoe@^f4t@&&*vc9auz%#4yc$d97lpz#8-x@e#cnrz4dqe-'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-#ALLOWED_HOSTS = ['tomel23.pythonanywhere.com']
+# ALLOWED_HOSTS = ['tomel23.pythonanywhere.com']
 ALLOWED_HOSTS = []
 # Application definition
 
@@ -26,6 +26,7 @@ INSTALLED_APPS = [
     'Info_app',
     'Account_app',
     'Adres_app',
+    'Zlecenie_app',
     'widget_tweaks',
 ]
 
@@ -97,7 +98,7 @@ AUTH_PASSWORD_VALIDATORS = [
 
 # Internationalization
 # https://docs.djangoproject.com/en/1.11/topics/i18n/
-#testing email
+# testing email
 EMAIL_HOST = 'localhost'
 EMAIL_PORT = 1025
 
@@ -115,14 +116,14 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/1.11/howto/static-files/
 
 STATIC_URL = '/static/'
-MEDIA_URL='/media/'
-MEDIA_ROOT=os.path.join(BASE_DIR,'Web_System\media')
+MEDIA_URL = '/media/'
+MEDIA_ROOT = os.path.join(BASE_DIR, 'Web_System\media')
 STATICFILES_DIRS = (
     os.path.join(BASE_DIR, "static"),
 )
 PROJECT_DIR = os.path.dirname(os.path.abspath(__file__))
 STATIC_ROOT = os.path.join(PROJECT_DIR, 'static')
 LOGIN_REDIRECT_URL = '/'
-#media
+# media
 
-print(os.path.join(BASE_DIR,'Web_System\media'))
+print(os.path.join(BASE_DIR, 'Web_System\media'))

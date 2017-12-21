@@ -5,21 +5,7 @@ from django.core.urlresolvers import reverse_lazy
 from django.shortcuts import render
 from django.views import generic
 
-from .models import Zlecenie, Adres
-
-
-class OrderView(generic.ListView):
-    template_name = 'Adres_app/index.html'
-    # template_name = 'Adres_app/index.html'
-    context_object_name = 'lista_zlecen'
-
-    def get_queryset(self):
-        return Zlecenie.objects.filter(user=self.request.user)
-
-
-class OrderDetailView(generic.DetailView):
-    model = Zlecenie
-    template_name = 'Adres_app/zlecenie_detail.html'
+from .models import Adres
 
 
 class AdresView(generic.ListView):
