@@ -49,23 +49,12 @@
                     <p>{{ zlecenie.adres_odbioru.nazwa }} </p>
                     <p>{{ zlecenie.adres_odbioru.ulica }} {{ zlecenie.adres_odbioru.nr }}</p>
                     <p>{{ zlecenie.adres_odbioru.kod_pocztowy }} {{ zlecenie.adres_odbioru.miasto }}</p>
-                    <button type="button" class="btn btn-warning btn-sm"
-                            onclick="return adres_modal('{% url 'Zlecenie_app:edytuj_adres' zlecenie.adres_odbioru.pk %}')"
-                            data-toggle="modal" data-target="#AdresModal">
-                        Edytuj
-                    </button>
                 </div>
                 <div class="col-4">
                     <p><h5>Adres dostawy</h5></p>
                     <p>{{ zlecenie.adres_dostawy.nazwa }}</p>
                     <p>{{ zlecenie.adres_dostawy.ulica }} {{ zlecenie.adres_dostawy.nr }}</p>
                     <p>{{ zlecenie.adres_dostawy.kod_pocztowy }} {{ zlecenie.adres_dostawy.miasto }}</p>
-
-                    <button type="button" class="btn btn-warning btn-sm"
-                            onclick="return abrir_modal('{% url 'Zlecenie_app:edytuj_zlecenie' zlecenie.pk %}')"
-                            data-toggle="modal" data-target="#Modal">
-                        Edytuj
-                    </button>
                 </div>
             </div>
         </div>
@@ -75,9 +64,10 @@
         <a class="btn btn-primary" href="{% url 'Zlecenie_app:lista_zlecen' %}">Wroc do listy zlecen</a>
     </p>
 
+
     <div class="modal" id="Modal" tabindex="-1" role="dialog"></div>
 
-    <div class="modal" id="AdresModal" tabindex="0" role="dialog"></div>
+
     <script>
         function abrir_modal(url) {
             $('#Modal').load(url, function () {
@@ -87,18 +77,6 @@
         }
 
         function ukryj_modal() {
-            $('#Modal').modal('hide');
-            return false;
-        }
-
-        function adres_modal(url) {
-            $('#AdresModal').load(url, function () {
-                $(this).modal('show');
-            });
-            return false;
-        }
-
-        function ukryj_modalAdres() {
             $('#Modal').modal('hide');
             return false;
         }

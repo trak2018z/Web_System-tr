@@ -5,7 +5,6 @@ Definition of views.
 from django.core.urlresolvers import reverse_lazy
 from django.views import generic
 
-from Adres_app.models import Adres
 from .models import Zlecenie
 
 
@@ -22,7 +21,6 @@ class ZleceniaListView(generic.ListView):
 
 class ZleceniaDetailView(generic.DetailView):
     model = Zlecenie
-
     # template_name = 'Zlecenie_app/tmp.html'
 
 
@@ -64,15 +62,3 @@ class ZlecenieUpdateView(generic.UpdateView):
         return reverse_lazy('Zlecenie_app:szczegoly_zamowienia', kwargs={'pk': self.object.pk})
 
 
-class AdresUpdateView(generic.UpdateView):
-    model = Adres
-    template_name = 'Zlecenie_app/zlecenie_form.html'
-    fields = ['ulica', 'nr', 'kod_pocztowy', 'miasto']
-
-    def get_success_url(self):
-        return reverse_lazy('Zlecenie_app:szczegoly_zamowienia', kwargs={'pk': self.object.pk})
-
-        # class ZlecenieDeleteView(LoginRequiredMixin, generic.DeleteView):
-
-# model = Zlecenie
-#     success_url = reverse_lazy('Adres_app:lista_adresow')
