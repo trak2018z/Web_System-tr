@@ -22,7 +22,8 @@ admin.autodiscover()
 
 urlpatterns = [
     url(r'^$', views.ZleceniaListView.as_view(), name='lista_zlecen'),
-    url(r'^(?P<pk>[0-9]+)/edytuj/$', views.ZlecenieUpdateView.as_view(), name='edytuj_zlecenie'),
     url(r'^(?P<pk>[0-9]+)', views.ZleceniaDetailView.as_view(), name='szczegoly_zamowienia'),
-    # url(r'^(?P<pk>[0-9]+)/edytuj adres/$', views.AdresUpdateView.as_view(), name='edytuj_adres'),
+    url(r'^(?P<pk>[0-9]+)/edytuj/$', views.ZlecenieUpdateView.as_view(), name='edytuj_zlecenie'),
+
+    url(r'^(?P<pk>[0-9]+)/edytuj_adres/(?P<adres_id>[0-9]+)/$', views.AdresUpdateView.as_view(), name='edytuj_adres'),
 ]

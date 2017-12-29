@@ -34,8 +34,11 @@
                     </tbody>
                 </table>
             </div>
-            </main>
+            <button type="button" class="btn btn-warning btn-sm"
+                    onclick="return abrir_modal('{% url 'Zlecenie_app:edytuj_zlecenie' zlecenie.pk %}')"
+                    data-toggle="modal" data-target="#Modal">
+                Edytuj
+            </button>
         </div>
     </div>
-
 {% endblock %}
