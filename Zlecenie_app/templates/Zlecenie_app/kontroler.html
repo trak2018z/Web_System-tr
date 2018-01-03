@@ -50,12 +50,6 @@
                     <p>{{ zlecenie.adres_odbioru.ulica }} {{ zlecenie.adres_odbioru.nr }}</p>
                     <p>{{ zlecenie.adres_odbioru.kod_pocztowy }} {{ zlecenie.adres_odbioru.miasto }}</p>
 
-                    <button type="button" class="btn btn-warning btn-sm"
-                            onclick="return abrir_modal('{% url 'Zlecenie_app:edytuj_adres' zlecenie.pk zlecenie.adres_odbioru.pk %}')"
-                            data-toggle="modal" data-target="#Modal">
-                        Edytuj
-                    </button>
-
                 </div>
                 <div class="col-4">
                     <p><h5>Adres dostawy</h5></p>
@@ -67,7 +61,6 @@
         </div>
     </div>
     <p>
-
         <a class="btn btn-primary" href="{% url 'Zlecenie_app:lista_zlecen' %}">Wroc do listy zlecen</a>
     </p>
 
@@ -77,9 +70,8 @@
 
     <script>
         function abrir_modal(url) {
-
             $('#Modal').load(url, function () {
-                console.log($(this));
+                console.log($(this).modal._isShown);
                 $(this).modal('show');
             });
             return false;

@@ -27,6 +27,9 @@ class Zlecenie(models.Model):
     data_odbioru = models.DateTimeField()
     data_dostarczenia = models.DateTimeField()
     wartosc = models.FloatField(default=0.0)
+    ilosc_sztuk = models.IntegerField(default=0)
+    waga = models.FloatField(default=0)
+    dystans = models.FloatField(default=0)
     faktura = models.IntegerField(default=0)
 
 

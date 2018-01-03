@@ -1,0 +1,1080 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BookmarkManager">
+    <bookmark url="file://$PROJECT_DIR$/Account_app/views.py" line="52" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="feb2ebf3-29a4-42c1-a8f2-dea6b392ce1f" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Zlecenie_app/migrations/0002_auto_20171225_0336.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Zlecenie_app/migrations/0003_auto_20171227_1937.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Zlecenie_app/migrations/0004_auto_20180103_1213.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Zlecenie_app/templates/Zlecenie_app/zlecenie_create.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Zlecenie_app/models.py" afterPath="$PROJECT_DIR$/Zlecenie_app/models.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Zlecenie_app/templates/Zlecenie_app/adres_form.html" afterPath="$PROJECT_DIR$/Zlecenie_app/templates/Zlecenie_app/adres_form.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Zlecenie_app/templates/Zlecenie_app/kontroler.html" afterPath="$PROJECT_DIR$/Zlecenie_app/templates/Zlecenie_app/kontroler.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Zlecenie_app/templates/Zlecenie_app/zlecenie_form.html" afterPath="$PROJECT_DIR$/Zlecenie_app/templates/Zlecenie_app/zlecenie_form.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Zlecenie_app/templates/Zlecenie_app/zlecenie_list.html" afterPath="$PROJECT_DIR$/Zlecenie_app/templates/Zlecenie_app/zlecenie_list.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Zlecenie_app/urls.py" afterPath="$PROJECT_DIR$/Zlecenie_app/urls.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Zlecenie_app/views.py" afterPath="$PROJECT_DIR$/Zlecenie_app/views.py" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_TABLE_DETAILS" value="true" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <expand />
+    <select />
+  </component>
+  <component name="DjangoConsoleOptions" custom-start-script="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)" module-name="Web_System" is-module-sdk="true">
+    <option name="myCustomStartScript" value="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)" />
+    <option name="myUseModuleSdk" value="true" />
+    <option name="myModuleName" value="Web_System" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="views.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Zlecenie_app/views.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="220">
+              <caret line="42" column="0" lean-forward="false" selection-start-line="42" selection-start-column="0" selection-end-line="52" selection-end-column="102" />
+              <folding>
+                <element signature="e#29#44#0" expanded="true" />
+                <element signature="e#2093#2389#0" expanded="false" />
+                <element signature="e#2389#2419#0" expanded="false" />
+                <element signature="e#2751#3879#0" expanded="false" />
+                <element signature="e#3175#3325#0" expanded="false" />
+                <element signature="e#3381#3879#0" expanded="false" />
+                <element signature="e#3927#4022#0" expanded="false" />
+                <element signature="e#4075#4799#0" expanded="false" />
+                <element signature="e#4860#5049#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="views.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Adres_app/views.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="88">
+              <caret line="22" column="14" lean-forward="true" selection-start-line="22" selection-start-column="14" selection-end-line="22" selection-end-column="14" />
+              <folding>
+                <element signature="e#29#78#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="zlecenie_create.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Zlecenie_app/templates/Zlecenie_app/zlecenie_create.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="442">
+              <caret line="26" column="62" lean-forward="false" selection-start-line="26" selection-start-column="62" selection-end-line="26" selection-end-column="62" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="CSS File" />
+        <option value="Python Script" />
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>navbar-da</find>
+      <find>navbar-d</find>
+      <find>e8e9e9</find>
+      <find>6ba442</find>
+      <find>za</find>
+      <find>edce</find>
+      <find>nav</find>
+      <find>edecec</find>
+      <find>edc</find>
+      <find>moda</find>
+      <find>&lt;nav</find>
+      <find>adres_form</find>
+      <find>form</find>
+      <find>inpu</find>
+      <find>Klient</find>
+      <find>{{ form.as_p }}</find>
+      <find>Klient_app</find>
+      <find>My</find>
+      <find>request.u</find>
+      <find>Modal</find>
+      <find>nowy_adres</find>
+      <find>zlecenie</find>
+      <find>meta</find>
+      <find>pk</find>
+      <find>render</find>
+      <find>user</find>
+      <find>initia</find>
+      <find>init</find>
+      <find>ini</find>
+      <find>valid</find>
+    </findStrings>
+    <dirStrings>
+      <dir>D:\Programowanie\Web_System\Login_app\static\content</dir>
+    </dirStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="PREVIOUS_COMMIT_AUTHORS">
+      <list>
+        <option value="Tomel23 &lt;tomel23@wp.pl&gt;" />
+        <option value="tomel23" />
+      </list>
+    </option>
+    <option name="UPDATE_CHANGES_POLICY" value="SHELVE" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="Obsługa_bazy_danych" />
+      </map>
+    </option>
+    <favorite-branches>
+      <branch-storage>
+        <map>
+          <entry type="LOCAL">
+            <value>
+              <list>
+                <branch-info repo="$PROJECT_DIR$" source="Obsługa_bazy_danych" />
+              </list>
+            </value>
+          </entry>
+        </map>
+      </branch-storage>
+    </favorite-branches>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/static/content/user.css" />
+        <option value="$PROJECT_DIR$/static/content/custom.css" />
+        <option value="$PROJECT_DIR$/Klient_app/models.py" />
+        <option value="$PROJECT_DIR$/Klient_app/templates/Klient_app/detail.html" />
+        <option value="$PROJECT_DIR$/Klient_app/templates/Klient_app/index.html" />
+        <option value="$PROJECT_DIR$/static/scripts/bootstrap.js" />
+        <option value="$PROJECT_DIR$/Klient_app/templates/Klient_app/album_form.html" />
+        <option value="$PROJECT_DIR$/Klient_app/templates/Klient_app/temp.html" />
+        <option value="$PROJECT_DIR$/Klient_app/templates/Klient_app/adres_list.html" />
+        <option value="$PROJECT_DIR$/Klient_app/templates/Klient_app/partial_book_create.html" />
+        <option value="$PROJECT_DIR$/Klient_app/views.py" />
+        <option value="$PROJECT_DIR$/Klient_app/templates/Klient_app/ssss.html" />
+        <option value="$PROJECT_DIR$/Klient_app/urls.py" />
+        <option value="$PROJECT_DIR$/Klient_app/templates/Klient_app/adres_form.html" />
+        <option value="$PROJECT_DIR$/templates/layout.html" />
+        <option value="$PROJECT_DIR$/templates/loginpartial.html" />
+        <option value="$PROJECT_DIR$/Account_app/admin.py" />
+        <option value="$PROJECT_DIR$/Account_app/forms.py" />
+        <option value="$PROJECT_DIR$/Account_app/urls.py" />
+        <option value="$PROJECT_DIR$/Adres_app/templates/Adres_app/ssss.html" />
+        <option value="$PROJECT_DIR$/Adres_app/templates/Adres_app/adres.html" />
+        <option value="$PROJECT_DIR$/Adres_app/templates/Adres_app/adres_create_success.html" />
+        <option value="$PROJECT_DIR$/Adres_app/templates/Adres_app/adres_update.html" />
+        <option value="$PROJECT_DIR$/Adres_app/templates/Adres_app/adres_form444.html" />
+        <option value="$PROJECT_DIR$/Adres_app/templates/Adres_app/index.html" />
+        <option value="$PROJECT_DIR$/Adres_app/models.py" />
+        <option value="$PROJECT_DIR$/Adres_app/templates/Adres_app/zlecenie_detail.html" />
+        <option value="$PROJECT_DIR$/Adres_app/admin.py" />
+        <option value="$PROJECT_DIR$/Web_System/settings.py" />
+        <option value="$PROJECT_DIR$/Zlecenie_app/admin.py" />
+        <option value="$PROJECT_DIR$/Account_app/views.py" />
+        <option value="$PROJECT_DIR$/Adres_app/templates/Adres_app/adres_list.html" />
+        <option value="$PROJECT_DIR$/Adres_app/templates/Adres_app/adres_form.html" />
+        <option value="$PROJECT_DIR$/Zlecenie_app/templates/Zlecenie_app/modal.html" />
+        <option value="$PROJECT_DIR$/Zlecenie_app/templates/Zlecenie_app/index.html" />
+        <option value="$PROJECT_DIR$/Zlecenie_app/templates/Zlecenie_app/zlecenie_detail.html" />
+        <option value="$PROJECT_DIR$/Web_System/urls.py" />
+        <option value="$PROJECT_DIR$/Adres_app/urls.py" />
+        <option value="$PROJECT_DIR$/Zlecenie_app/templates/Zlecenie_app/kontroler.html" />
+        <option value="$PROJECT_DIR$/Zlecenie_app/templates/Zlecenie_app/zlecenie_form.html" />
+        <option value="$PROJECT_DIR$/Account_app/templates/Account_app/edit_profile.html" />
+        <option value="$PROJECT_DIR$/Zlecenie_app/templates/Zlecenie_app/zlecenie_create1.html" />
+        <option value="$PROJECT_DIR$/Zlecenie_app/models.py" />
+        <option value="$PROJECT_DIR$/Zlecenie_app/forms.py" />
+        <option value="$PROJECT_DIR$/Zlecenie_app/urls.py" />
+        <option value="$PROJECT_DIR$/Zlecenie_app/templates/Zlecenie_app/adres_form.html" />
+        <option value="$PROJECT_DIR$/Zlecenie_app/templates/Zlecenie_app/tmp.html" />
+        <option value="$PROJECT_DIR$/Zlecenie_app/templates/Zlecenie_app/zlecenie_create.html" />
+        <option value="$PROJECT_DIR$/Zlecenie_app/views.py" />
+        <option value="$PROJECT_DIR$/Adres_app/views.py" />
+        <option value="$PROJECT_DIR$/Zlecenie_app/templates/Zlecenie_app/zlecenie_list.html" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsFlowSettings">
+    <service-enabled>true</service-enabled>
+    <exe-path />
+    <annotation-enable>false</annotation-enable>
+    <other-services-enabled>true</other-services-enabled>
+    <auto-save>true</auto-save>
+  </component>
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="-1019" />
+    <option name="y" value="-18" />
+    <option name="width" value="1382" />
+    <option name="height" value="754" />
+  </component>
+  <component name="ProjectInspectionProfilesVisibleTreeState">
+    <entry key="Project Default">
+      <profile-state>
+        <expanded-state>
+          <State>
+            <id />
+          </State>
+          <State>
+            <id>Django</id>
+          </State>
+          <State>
+            <id>GeneralJavaScript</id>
+          </State>
+          <State>
+            <id>JavaScript</id>
+          </State>
+          <State>
+            <id>Python</id>
+          </State>
+        </expanded-state>
+        <selected-state>
+          <State>
+            <id>PyCompatibilityInspection</id>
+          </State>
+        </selected-state>
+      </profile-state>
+    </entry>
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+      <manualOrder />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="Scratches" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="Web_System" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Web_System" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Web_System" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Web_System" type="462c0819:PsiDirectoryNode" />
+              <item name="Adres_app" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Web_System" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Web_System" type="462c0819:PsiDirectoryNode" />
+              <item name="Adres_app" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Web_System" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Web_System" type="462c0819:PsiDirectoryNode" />
+              <item name="Adres_app" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+              <item name="Adres_app" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Web_System" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Web_System" type="462c0819:PsiDirectoryNode" />
+              <item name="Zlecenie_app" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Web_System" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Web_System" type="462c0819:PsiDirectoryNode" />
+              <item name="Zlecenie_app" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Web_System" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Web_System" type="462c0819:PsiDirectoryNode" />
+              <item name="Zlecenie_app" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+              <item name="Zlecenie_app" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
+    <property name="last_opened_file_path" value="C:/Program Files (x86)/Python36-32/python.exe" />
+    <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
+    <property name="com.intellij.database.dataSource.DataSourceTemplate" value="MySQL" />
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="last.edited.regexp" value="Sample Text" />
+  </component>
+  <component name="PyConsoleOptionsProvider">
+    <option name="myPythonConsoleState">
+      <console-settings module-name="Web_System" is-module-sdk="true">
+        <option name="myUseModuleSdk" value="true" />
+        <option name="myModuleName" value="Web_System" />
+      </console-settings>
+    </option>
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Programowanie\Web_System\templates" />
+      <recent name="D:\Programowanie\Web_System\static\scripts" />
+      <recent name="D:\Programowanie\Web_System\static\content" />
+      <recent name="D:\Programowanie\Web_System\static" />
+      <recent name="D:\Programowanie\Web_System\templates\Home" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Programowanie\Web_System\Zlecenie_app\templates\Zlecenie_app" />
+      <recent name="D:\Programowanie\Web_System" />
+      <recent name="D:\Programowanie\Web_System\static\content" />
+      <recent name="D:\Programowanie\Web_System\Klient_app" />
+      <recent name="D:\Programowanie\Web_System\Account_magnament_app\templates\Account_magnament_app" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Django server.Web_System">
+    <configuration name="Web_System" type="Python.DjangoServer" factoryName="Django server">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+        <env name="DJANGO_SETTINGS_MODULE" value="Web_System.settings" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="Web_System" />
+      <option name="launchJavascriptDebuger" value="false" />
+      <option name="port" value="8000" />
+      <option name="host" value="" />
+      <option name="additionalOptions" value="" />
+      <option name="browserUrl" value="" />
+      <option name="runTestServer" value="false" />
+      <option name="runNoReload" value="false" />
+      <option name="useCustomRunCommand" value="false" />
+      <option name="customRunCommand" value="" />
+    </configuration>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false">
+    <option name="remove_strategy" value="false" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="feb2ebf3-29a4-42c1-a8f2-dea6b392ce1f" name="Default" comment="" />
+      <created>1511183796858</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1511183796858</updated>
+    </task>
+    <task id="LOCAL-00001" summary="Utworzenie panelu logowania, rejestracji, oraz modułu informacyjnego">
+      <created>1511204201252</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1511204201252</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Nawiązanie połączenia z bazą danych">
+      <created>1511207728541</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1511207728541</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Zmiana bazy danych">
+      <created>1511866324965</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1511866324966</updated>
+    </task>
+    <task id="LOCAL-00004" summary="poprawki do bazy">
+      <created>1511869754375</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1511869754375</updated>
+    </task>
+    <task id="LOCAL-00005" summary="poprawki w fromularzu rejestracji">
+      <created>1511991844501</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1511991844501</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Nowy system logowania i rejestracji (włącznie z odzyskiwaniem  haseł)">
+      <created>1512695398237</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1512695398237</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Nowy system logowania i rejestracji (aktualizacja plików)">
+      <created>1512718716417</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1512718716417</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Nowy system logowania i rejestracji (aktualizacja plików)">
+      <created>1512719052529</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1512719052529</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Poprawiony model Userprofile(dane klientów)">
+      <created>1513031328966</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1513031328967</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Model bazy danych dla zlecen oraz wyswietlanie zleceń za pomoca generic View">
+      <created>1513043242638</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1513043242638</updated>
+    </task>
+    <task id="LOCAL-00011" summary="wyswietlanie zlecen poszczegolnego uzytkownika(wersja testowa)">
+      <created>1513086399122</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1513086399122</updated>
+    </task>
+    <task id="LOCAL-00012" summary="Nowy szablon dla wyświetlania listy zlecen klienta">
+      <created>1513263181960</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1513263181960</updated>
+    </task>
+    <task id="LOCAL-00013" summary="Dodawanie adresow przy pomocy widoku generycznego (plik modal'u)">
+      <created>1513475351274</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1513475351274</updated>
+    </task>
+    <task id="LOCAL-00014" summary="Dodawanie edycja. usuwanie adresow przy pomocy widoku generycznego wersja 1">
+      <created>1513641662951</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1513641662952</updated>
+    </task>
+    <task id="LOCAL-00015" summary="Dodawanie edycja. usuwanie adresow przy pomocy widoku generycznego wersja 2">
+      <created>1513646991519</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1513646991519</updated>
+    </task>
+    <task id="LOCAL-00016" summary="&#10;Edycja, przegladanie zlecen przy pomocy widoku generycznego wersja 1">
+      <created>1513869402280</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1513869402280</updated>
+    </task>
+    <task id="LOCAL-00017" summary="&#10;Edycja, przegladanie zlecen przy pomocy widoku generycznego wersja 2(bez edycji adresow)">
+      <created>1513907350290</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1513907350290</updated>
+    </task>
+    <task id="LOCAL-00018" summary="&#10;Edycja, przegladanie zlecen przy pomocy widoku generycznego wersja 3(edycji adresow- problem z modalem)">
+      <created>1514512076516</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1514512076516</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
+    <servers />
+  </component>
+  <component name="TodoView" selected-index="1">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-1688" y="-18" width="1696" height="1066" extended-state="6" />
+    <layout>
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32762313" sideWeight="0.49394855" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3961456" sideWeight="0.5275061" order="11" side_tool="true" content_ui="tabs" />
+      <window_info id="manage.py@Web_System" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3308351" sideWeight="0.494705" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3961456" sideWeight="0.4724939" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32869378" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32762313" sideWeight="0.48033282" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Mongo Explorer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3294621" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32762313" sideWeight="0.49394855" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.14364304" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329429" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24810892" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.19033675" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3254818" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+    </layout>
+    <layout-to-restore>
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32762313" sideWeight="0.49394855" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.40032154" sideWeight="0.5249622" order="11" side_tool="true" content_ui="tabs" />
+      <window_info id="manage.py@Web_System" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3308351" sideWeight="0.494705" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32869378" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32762313" sideWeight="0.48033282" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3971061" sideWeight="0.4750378" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Mongo Explorer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3294621" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32762313" sideWeight="0.49394855" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17776097" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329429" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3254818" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24810892" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.19033675" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+    </layout-to-restore>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.History.Properties">
+    <option name="COLUMN_ORDER">
+      <list>
+        <option value="0" />
+        <option value="2" />
+        <option value="3" />
+        <option value="1" />
+      </list>
+    </option>
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="RECENTLY_FILTERED_USER_GROUPS">
+                <collection />
+              </option>
+              <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+                <collection />
+              </option>
+              <option name="COLUMN_ORDER">
+                <list>
+                  <option value="0" />
+                  <option value="1" />
+                  <option value="2" />
+                  <option value="3" />
+                </list>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
+    <MESSAGE value="Utworzenie panelu logowania, rejestracji, oraz modułu informacyjnego" />
+    <MESSAGE value="Nawiązanie połączenia z bazą danych" />
+    <MESSAGE value="Zmiana bazy danych" />
+    <MESSAGE value="poprawki do bazy" />
+    <MESSAGE value="poprawki w fromularzu rejestracji" />
+    <MESSAGE value="Nowy system logowania i rejestracji (włącznie z odzyskiwaniem  haseł)" />
+    <MESSAGE value="Nowy system logowania i rejestracji (aktualizacja plików)" />
+    <MESSAGE value="Poprawiony model Userprofile(dane klientów)" />
+    <MESSAGE value="Model bazy danych dla zlecen oraz wyswietlanie zleceń za pomoca generic View" />
+    <MESSAGE value="wyswietlanie zlecen poszczegolnego uzytkownika(wersja testowa)" />
+    <MESSAGE value="Nowy szablon dla wyświetlania listy zlecen klienta" />
+    <MESSAGE value="Dodawanie adresow przy pomocy widoku generycznego (plik modal'u)" />
+    <MESSAGE value="Dodawanie edycja. usuwanie adresow przy pomocy widoku generycznego wersja 1" />
+    <MESSAGE value="Dodawanie edycja. usuwanie adresow przy pomocy widoku generycznego wersja 2" />
+    <MESSAGE value="&#10;Edycja, przegladanie zlecen przy pomocy widoku generycznego wersja 1" />
+    <MESSAGE value="&#10;Edycja, przegladanie zlecen przy pomocy widoku generycznego wersja 2(bez edycji adresow)" />
+    <MESSAGE value="&#10;Edycja, przegladanie zlecen przy pomocy widoku generycznego wersja 3(edycji adresow- problem z modalem)" />
+    <option name="LAST_COMMIT_MESSAGE" value="&#10;Edycja, przegladanie zlecen przy pomocy widoku generycznego wersja 3(edycji adresow- problem z modalem)" />
+    <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
+    <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <option name="time" value="37" />
+    </breakpoint-manager>
+    <watches-manager />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/Adres_app/templates/Adres_app/index.html" />
+    <entry file="file://$PROJECT_DIR$/Adres_app/templates/Adres_app/zlecenie_detail.html" />
+    <entry file="file://$PROJECT_DIR$/Adres_app/admin.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="26" lean-forward="false" selection-start-line="4" selection-start-column="26" selection-end-line="4" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Zlecenie_app/admin.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="17" lean-forward="false" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Zlecenie_app/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Web_System/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="459">
+          <caret line="27" column="16" lean-forward="true" selection-start-line="27" selection-start-column="16" selection-end-line="27" selection-end-column="16" />
+          <folding>
+            <element signature="e#914#1313#0" expanded="false" />
+            <element signature="e#1360#1875#0" expanded="false" />
+            <element signature="e#1967#2338#0" expanded="false" />
+            <element signature="e#2469#2865#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Account_app/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="19" column="0" lean-forward="true" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Web_System/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/Program Files (x86)/Python36-32/Lib/site-packages/django/views/generic/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Zlecenie_app/templates/Zlecenie_app/kontorler.html" />
+    <entry file="file://$PROJECT_DIR$/Zlecenie_app/templates/Zlecenie_app/zlecenie_detail.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="4" lean-forward="false" selection-start-line="2" selection-start-column="4" selection-end-line="2" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Zlecenie_app/templates/Zlecenie_app/index.html" />
+    <entry file="file://$PROJECT_DIR$/Zlecenie_app/templates/Zlecenie_app/modal.html" />
+    <entry file="file://$PROJECT_DIR$/templates/layout.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-204">
+          <caret line="21" column="60" lean-forward="true" selection-start-line="21" selection-start-column="60" selection-end-line="21" selection-end-column="60" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Info_app/templates/Info_app/offer.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Info_app/templates/Info_app/home.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="18" column="73" lean-forward="true" selection-start-line="18" selection-start-column="11" selection-end-line="18" selection-end-column="73" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Info_app/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="25" column="39" lean-forward="false" selection-start-line="25" selection-start-column="39" selection-end-line="25" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Account_app/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="324">
+          <caret line="60" column="16" lean-forward="false" selection-start-line="60" selection-start-column="16" selection-end-line="60" selection-end-column="16" />
+          <folding>
+            <element signature="e#0#29#0" expanded="false" />
+            <element signature="e#745#786#0" expanded="false" />
+            <element signature="e#1185#1435#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/Program Files (x86)/Python36-32/Lib/site-packages/django/urls/resolvers.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="178">
+          <caret line="404" column="0" lean-forward="false" selection-start-line="404" selection-start-column="0" selection-end-line="404" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Account_app/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="5" column="0" lean-forward="true" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Account_app/forms.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="381">
+          <caret line="53" column="15" lean-forward="true" selection-start-line="53" selection-start-column="15" selection-end-line="53" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Account_app/templates/Account_app/change_password.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-764">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Account_app/templates/Account_app/view_profile.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="24" lean-forward="true" selection-start-line="9" selection-start-column="8" selection-end-line="9" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/Program Files (x86)/Python36-32/Lib/site-packages/django/db/models/base.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="178">
+          <caret line="641" column="8" lean-forward="false" selection-start-line="641" selection-start-column="8" selection-end-line="641" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Adres_app/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="27" column="41" lean-forward="false" selection-start-line="27" selection-start-column="41" selection-end-line="27" selection-end-column="41" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Zlecenie_app/templates/Zlecenie_app/zlecenie_form.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="18" lean-forward="true" selection-start-line="9" selection-start-column="12" selection-end-line="14" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/Program Files (x86)/Python36-32/Lib/site-packages/django/views/generic/detail.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="178">
+          <caret line="73" column="0" lean-forward="false" selection-start-line="73" selection-start-column="0" selection-end-line="73" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/Program Files (x86)/Python36-32/Lib/site-packages/django/views/generic/edit.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="331">
+          <caret line="92" column="0" lean-forward="false" selection-start-line="92" selection-start-column="0" selection-end-line="92" selection-end-column="0" />
+          <folding>
+            <element signature="e#5203#6062#0" expanded="false" />
+            <element signature="e#6117#6167#0" expanded="false" />
+            <element signature="e#6227#6307#0" expanded="false" />
+            <element signature="e#6369#6801#0" expanded="false" />
+            <element signature="e#6877#7010#0" expanded="false" />
+            <element signature="e#7072#7526#0" expanded="false" />
+            <element signature="e#7602#7723#0" expanded="false" />
+            <element signature="e#7759#8602#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/Program Files (x86)/Python36-32/Lib/site-packages/django/forms/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="178">
+          <caret line="276" column="0" lean-forward="false" selection-start-line="276" selection-start-column="0" selection-end-line="276" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/Program Files (x86)/Python36-32/Lib/importlib/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="178">
+          <caret line="125" column="0" lean-forward="false" selection-start-line="125" selection-start-column="0" selection-end-line="125" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/Program Files (x86)/Python36-32/Lib/site-packages/django/conf/urls/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="178">
+          <caret line="49" column="0" lean-forward="false" selection-start-line="49" selection-start-column="0" selection-end-line="49" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Web_System/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="364">
+          <caret line="30" column="0" lean-forward="false" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Zlecenie_app/templates/Zlecenie_app/zlecenie_detail.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="857">
+          <caret line="55" column="18" lean-forward="false" selection-start-line="55" selection-start-column="17" selection-end-line="55" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Account_app/templates/Account_app/edit_profile.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="0" lean-forward="true" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Account_app/templates/Account_app/Userprofileedit.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="26" lean-forward="false" selection-start-line="6" selection-start-column="26" selection-end-line="6" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Account_app/templates/Account_app/password_reset_email.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Account_app/templates/Account_app/singup.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="358">
+          <caret line="22" column="5" lean-forward="true" selection-start-line="22" selection-start-column="5" selection-end-line="22" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Zlecenie_app/forms.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="6" column="30" lean-forward="false" selection-start-line="6" selection-start-column="30" selection-end-line="6" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Zlecenie_app/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="29" column="15" lean-forward="false" selection-start-line="29" selection-start-column="4" selection-end-line="29" selection-end-column="15" />
+          <folding>
+            <element signature="e#0#43#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Zlecenie_app/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="383">
+          <caret line="26" column="75" lean-forward="false" selection-start-line="26" selection-start-column="62" selection-end-line="26" selection-end-column="75" />
+          <folding>
+            <element signature="e#644#676#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Zlecenie_app/templates/Zlecenie_app/zlecenie_create1.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1768">
+          <caret line="217" column="0" lean-forward="true" selection-start-line="217" selection-start-column="0" selection-end-line="217" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Zlecenie_app/templates/Zlecenie_app/adres_form.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="10" column="11" lean-forward="false" selection-start-line="10" selection-start-column="11" selection-end-line="10" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Adres_app/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="6" column="8" lean-forward="false" selection-start-line="6" selection-start-column="4" selection-end-line="6" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Zlecenie_app/templates/Zlecenie_app/tmp.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="18" column="26" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="62" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Adres_app/templates/Adres_app/adres_list.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="13" column="34" lean-forward="true" selection-start-line="13" selection-start-column="34" selection-end-line="13" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Adres_app/templates/Adres_app/adres_form.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="21" lean-forward="false" selection-start-line="11" selection-start-column="21" selection-end-line="11" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Zlecenie_app/templates/Zlecenie_app/kontroler.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="411">
+          <caret line="36" column="44" lean-forward="false" selection-start-line="36" selection-start-column="44" selection-end-line="36" selection-end-column="44" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Zlecenie_app/templates/Zlecenie_app/zlecenie_create.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="26" column="62" lean-forward="false" selection-start-line="26" selection-start-column="62" selection-end-line="26" selection-end-column="62" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Zlecenie_app/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="42" column="0" lean-forward="false" selection-start-line="42" selection-start-column="0" selection-end-line="52" selection-end-column="102" />
+          <folding>
+            <element signature="e#29#44#0" expanded="true" />
+            <element signature="e#2093#2389#0" expanded="false" />
+            <element signature="e#2389#2419#0" expanded="false" />
+            <element signature="e#2751#3879#0" expanded="false" />
+            <element signature="e#3175#3325#0" expanded="false" />
+            <element signature="e#3381#3879#0" expanded="false" />
+            <element signature="e#3927#4022#0" expanded="false" />
+            <element signature="e#4075#4799#0" expanded="false" />
+            <element signature="e#4860#5049#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Zlecenie_app/templates/Zlecenie_app/zlecenie_list.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="24" column="28" lean-forward="true" selection-start-line="24" selection-start-column="28" selection-end-line="24" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Adres_app/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="88">
+          <caret line="22" column="14" lean-forward="true" selection-start-line="22" selection-start-column="14" selection-end-line="22" selection-end-column="14" />
+          <folding>
+            <element signature="e#29#78#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>
