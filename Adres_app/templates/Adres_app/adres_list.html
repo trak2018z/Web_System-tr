@@ -10,7 +10,7 @@
             <div class="row">
                 <!-- przycisk dodaj -->
                 <div class="col-lg-10">
-                    <a onclick="return abrir_modal('{% url 'Adres_app:nowy_adres' %}')" class="btn btn-primary">
+                    <a onclick="return abrir_modal('{% url 'Adres_app:nowy_adres' %}')" class="button btn btn-success">
                         Nowy adres
                     </a>
                 </div>
@@ -40,7 +40,7 @@
                             <td>{{ adres.miasto }}</td>
                             <td>
                                 <a onclick="return abrir_modal('{% url 'Adres_app:edytuj_adres' adres.pk %}')"
-                                   class="btn btn-warning btn-sm js-edytuj-adres">
+                                   class="btn btn-success btn-sm" style="color: white">
                                     Edytuj
                                 </a>
                                 <form action="{% url 'Adres_app:usun_adres' adres.pk %}" method="post"
