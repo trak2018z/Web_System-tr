@@ -1,22 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="BookmarkManager">
-    <bookmark url="file://$PROJECT_DIR$/Account_app/views.py" line="52" />
+    <bookmark url="file://$PROJECT_DIR$/Account_app/views.py" line="54" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="feb2ebf3-29a4-42c1-a8f2-dea6b392ce1f" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Zlecenie_app/migrations/0002_auto_20171225_0336.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Zlecenie_app/migrations/0003_auto_20171227_1937.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Zlecenie_app/migrations/0004_auto_20180103_1213.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Zlecenie_app/templates/Zlecenie_app/zlecenie_create.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Zlecenie_app/models.py" afterPath="$PROJECT_DIR$/Zlecenie_app/models.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Zlecenie_app/templates/Zlecenie_app/adres_form.html" afterPath="$PROJECT_DIR$/Zlecenie_app/templates/Zlecenie_app/adres_form.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Zlecenie_app/templates/Zlecenie_app/kontroler.html" afterPath="$PROJECT_DIR$/Zlecenie_app/templates/Zlecenie_app/kontroler.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Zlecenie_app/templates/Zlecenie_app/zlecenie_form.html" afterPath="$PROJECT_DIR$/Zlecenie_app/templates/Zlecenie_app/zlecenie_form.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Zlecenie_app/templates/Zlecenie_app/zlecenie_list.html" afterPath="$PROJECT_DIR$/Zlecenie_app/templates/Zlecenie_app/zlecenie_list.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Zlecenie_app/urls.py" afterPath="$PROJECT_DIR$/Zlecenie_app/urls.py" />
+    <list default="true" id="feb2ebf3-29a4-42c1-a8f2-dea6b392ce1f" name="Default" comment="Wymagane logo">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Account_app/views.py" afterPath="$PROJECT_DIR$/Account_app/views.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Adres_app/views.py" afterPath="$PROJECT_DIR$/Adres_app/views.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Web_System/settings.py" afterPath="$PROJECT_DIR$/Web_System/settings.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Zlecenie_app/views.py" afterPath="$PROJECT_DIR$/Zlecenie_app/views.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/layout.html" afterPath="$PROJECT_DIR$/templates/layout.html" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -46,41 +40,71 @@
       <file leaf-file-name="views.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Zlecenie_app/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="220">
-              <caret line="42" column="0" lean-forward="false" selection-start-line="42" selection-start-column="0" selection-end-line="52" selection-end-column="102" />
+            <state relative-caret-position="289">
+              <caret line="17" column="0" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="50" />
               <folding>
-                <element signature="e#29#44#0" expanded="true" />
-                <element signature="e#2093#2389#0" expanded="false" />
-                <element signature="e#2389#2419#0" expanded="false" />
-                <element signature="e#2751#3879#0" expanded="false" />
-                <element signature="e#3175#3325#0" expanded="false" />
-                <element signature="e#3381#3879#0" expanded="false" />
-                <element signature="e#3927#4022#0" expanded="false" />
-                <element signature="e#4075#4799#0" expanded="false" />
-                <element signature="e#4860#5049#0" expanded="false" />
+                <element signature="e#30#47#0" expanded="true" />
+                <element signature="e#592#929#0" expanded="false" />
+                <element signature="e#1032#2188#0" expanded="false" />
+                <element signature="e#2587#2617#0" expanded="false" />
+                <element signature="e#3424#3574#0" expanded="false" />
+                <element signature="e#3630#4128#0" expanded="false" />
+                <element signature="e#4176#4271#0" expanded="false" />
+                <element signature="e#4374#5098#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="views.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Adres_app/views.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="102">
+              <caret line="11" column="21" lean-forward="false" selection-start-line="11" selection-start-column="21" selection-end-line="11" selection-end-column="21" />
+              <folding>
+                <element signature="e#29#86#0" expanded="true" />
+                <element signature="e#651#1057#0" expanded="false" />
+                <element signature="e#1157#1340#0" expanded="false" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="views.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Adres_app/views.py">
+        <entry file="file://$PROJECT_DIR$/Account_app/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="88">
-              <caret line="22" column="14" lean-forward="true" selection-start-line="22" selection-start-column="14" selection-end-line="22" selection-end-column="14" />
+            <state relative-caret-position="377">
+              <caret line="71" column="19" lean-forward="false" selection-start-line="71" selection-start-column="19" selection-end-line="71" selection-end-column="19" />
               <folding>
-                <element signature="e#29#78#0" expanded="true" />
+                <element signature="e#30#86#0" expanded="true" />
+                <element signature="e#501#1144#0" expanded="false" />
+                <element signature="e#1178#1273#0" expanded="false" />
+                <element signature="e#1307#1687#0" expanded="false" />
+                <element signature="e#1724#2239#0" expanded="false" />
+                <element signature="e#2339#2797#0" expanded="false" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="zlecenie_create.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Zlecenie_app/templates/Zlecenie_app/zlecenie_create.html">
+      <file leaf-file-name="settings.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Web_System/settings.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="442">
-              <caret line="26" column="62" lean-forward="false" selection-start-line="26" selection-start-column="62" selection-end-line="26" selection-end-column="62" />
+            <state relative-caret-position="377">
+              <caret line="115" column="60" lean-forward="true" selection-start-line="115" selection-start-column="60" selection-end-line="115" selection-end-column="60" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="urls.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Web_System/urls.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="247">
+              <caret line="23" column="0" lean-forward="true" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
+              <folding>
+                <element signature="e#644#676#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -91,15 +115,13 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="CSS File" />
-        <option value="Python Script" />
         <option value="HTML File" />
+        <option value="Python Script" />
       </list>
     </option>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>navbar-da</find>
-      <find>navbar-d</find>
       <find>e8e9e9</find>
       <find>6ba442</find>
       <find>za</find>
@@ -128,6 +150,8 @@
       <find>init</find>
       <find>ini</find>
       <find>valid</find>
+      <find>LOGIN_u</find>
+      <find>LOGIN_REDIRECT_URL</find>
     </findStrings>
     <dirStrings>
       <dir>D:\Programowanie\Web_System\Login_app\static\content</dir>
@@ -136,8 +160,8 @@
   <component name="Git.Settings">
     <option name="PREVIOUS_COMMIT_AUTHORS">
       <list>
-        <option value="Tomel23 &lt;tomel23@wp.pl&gt;" />
         <option value="tomel23" />
+        <option value="Tomel23 &lt;tomel23@wp.pl&gt;" />
       </list>
     </option>
     <option name="UPDATE_CHANGES_POLICY" value="SHELVE" />
@@ -147,27 +171,10 @@
         <entry key="$PROJECT_DIR$" value="Obsługa_bazy_danych" />
       </map>
     </option>
-    <favorite-branches>
-      <branch-storage>
-        <map>
-          <entry type="LOCAL">
-            <value>
-              <list>
-                <branch-info repo="$PROJECT_DIR$" source="Obsługa_bazy_danych" />
-              </list>
-            </value>
-          </entry>
-        </map>
-      </branch-storage>
-    </favorite-branches>
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/static/content/user.css" />
-        <option value="$PROJECT_DIR$/static/content/custom.css" />
-        <option value="$PROJECT_DIR$/Klient_app/models.py" />
-        <option value="$PROJECT_DIR$/Klient_app/templates/Klient_app/detail.html" />
         <option value="$PROJECT_DIR$/Klient_app/templates/Klient_app/index.html" />
         <option value="$PROJECT_DIR$/static/scripts/bootstrap.js" />
         <option value="$PROJECT_DIR$/Klient_app/templates/Klient_app/album_form.html" />
@@ -178,7 +185,6 @@
         <option value="$PROJECT_DIR$/Klient_app/templates/Klient_app/ssss.html" />
         <option value="$PROJECT_DIR$/Klient_app/urls.py" />
         <option value="$PROJECT_DIR$/Klient_app/templates/Klient_app/adres_form.html" />
-        <option value="$PROJECT_DIR$/templates/layout.html" />
         <option value="$PROJECT_DIR$/templates/loginpartial.html" />
         <option value="$PROJECT_DIR$/Account_app/admin.py" />
         <option value="$PROJECT_DIR$/Account_app/forms.py" />
@@ -192,15 +198,12 @@
         <option value="$PROJECT_DIR$/Adres_app/models.py" />
         <option value="$PROJECT_DIR$/Adres_app/templates/Adres_app/zlecenie_detail.html" />
         <option value="$PROJECT_DIR$/Adres_app/admin.py" />
-        <option value="$PROJECT_DIR$/Web_System/settings.py" />
         <option value="$PROJECT_DIR$/Zlecenie_app/admin.py" />
-        <option value="$PROJECT_DIR$/Account_app/views.py" />
         <option value="$PROJECT_DIR$/Adres_app/templates/Adres_app/adres_list.html" />
         <option value="$PROJECT_DIR$/Adres_app/templates/Adres_app/adres_form.html" />
         <option value="$PROJECT_DIR$/Zlecenie_app/templates/Zlecenie_app/modal.html" />
         <option value="$PROJECT_DIR$/Zlecenie_app/templates/Zlecenie_app/index.html" />
         <option value="$PROJECT_DIR$/Zlecenie_app/templates/Zlecenie_app/zlecenie_detail.html" />
-        <option value="$PROJECT_DIR$/Web_System/urls.py" />
         <option value="$PROJECT_DIR$/Adres_app/urls.py" />
         <option value="$PROJECT_DIR$/Zlecenie_app/templates/Zlecenie_app/kontroler.html" />
         <option value="$PROJECT_DIR$/Zlecenie_app/templates/Zlecenie_app/zlecenie_form.html" />
@@ -212,9 +215,17 @@
         <option value="$PROJECT_DIR$/Zlecenie_app/templates/Zlecenie_app/adres_form.html" />
         <option value="$PROJECT_DIR$/Zlecenie_app/templates/Zlecenie_app/tmp.html" />
         <option value="$PROJECT_DIR$/Zlecenie_app/templates/Zlecenie_app/zlecenie_create.html" />
-        <option value="$PROJECT_DIR$/Zlecenie_app/views.py" />
-        <option value="$PROJECT_DIR$/Adres_app/views.py" />
         <option value="$PROJECT_DIR$/Zlecenie_app/templates/Zlecenie_app/zlecenie_list.html" />
+        <option value="$PROJECT_DIR$/Web_System/middleware.py" />
+        <option value="$PROJECT_DIR$/templates/layout.html" />
+        <option value="$PROJECT_DIR$/Info_app/urls.py" />
+        <option value="$PROJECT_DIR$/Web_System/views.py" />
+        <option value="$PROJECT_DIR$/Web_System/urls.py" />
+        <option value="$PROJECT_DIR$/Web_System/login_required.py" />
+        <option value="$PROJECT_DIR$/Zlecenie_app/views.py" />
+        <option value="$PROJECT_DIR$/Web_System/settings.py" />
+        <option value="$PROJECT_DIR$/Adres_app/views.py" />
+        <option value="$PROJECT_DIR$/Account_app/views.py" />
       </list>
     </option>
   </component>
@@ -295,38 +306,7 @@
             <path>
               <item name="Web_System" type="b2602c69:ProjectViewProjectNode" />
               <item name="Web_System" type="462c0819:PsiDirectoryNode" />
-              <item name="Adres_app" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Web_System" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Web_System" type="462c0819:PsiDirectoryNode" />
-              <item name="Adres_app" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Web_System" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Web_System" type="462c0819:PsiDirectoryNode" />
-              <item name="Adres_app" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
-              <item name="Adres_app" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Web_System" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Web_System" type="462c0819:PsiDirectoryNode" />
-              <item name="Zlecenie_app" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Web_System" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Web_System" type="462c0819:PsiDirectoryNode" />
-              <item name="Zlecenie_app" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Web_System" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Web_System" type="462c0819:PsiDirectoryNode" />
-              <item name="Zlecenie_app" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
-              <item name="Zlecenie_app" type="462c0819:PsiDirectoryNode" />
+              <item name="Account_app" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -545,7 +525,14 @@
       <option name="project" value="LOCAL" />
       <updated>1514512076516</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="&#10;dodawanie zlecenia">
+      <created>1514991652061</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1514991652061</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TodoView" selected-index="1">
@@ -559,8 +546,10 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-1688" y="-18" width="1696" height="1066" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32762313" sideWeight="0.49394855" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3961456" sideWeight="0.5275061" order="11" side_tool="true" content_ui="tabs" />
       <window_info id="manage.py@Web_System" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3308351" sideWeight="0.494705" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3961456" sideWeight="0.4724939" order="2" side_tool="false" content_ui="tabs" />
@@ -568,19 +557,18 @@
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32762313" sideWeight="0.48033282" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Mongo Explorer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3294621" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32762313" sideWeight="0.49394855" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.14364304" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.14364304" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329429" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3254818" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24810892" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.19033675" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3254818" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
@@ -669,26 +657,18 @@
     <MESSAGE value="&#10;Edycja, przegladanie zlecen przy pomocy widoku generycznego wersja 1" />
     <MESSAGE value="&#10;Edycja, przegladanie zlecen przy pomocy widoku generycznego wersja 2(bez edycji adresow)" />
     <MESSAGE value="&#10;Edycja, przegladanie zlecen przy pomocy widoku generycznego wersja 3(edycji adresow- problem z modalem)" />
-    <option name="LAST_COMMIT_MESSAGE" value="&#10;Edycja, przegladanie zlecen przy pomocy widoku generycznego wersja 3(edycji adresow- problem z modalem)" />
+    <MESSAGE value="&#10;dodawanie zlecenia" />
+    <option name="LAST_COMMIT_MESSAGE" value="&#10;dodawanie zlecenia" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="37" />
+      <option name="time" value="39" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Adres_app/templates/Adres_app/index.html" />
-    <entry file="file://$PROJECT_DIR$/Adres_app/templates/Adres_app/zlecenie_detail.html" />
-    <entry file="file://$PROJECT_DIR$/Adres_app/admin.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="26" lean-forward="false" selection-start-line="4" selection-start-column="26" selection-end-line="4" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Zlecenie_app/admin.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
@@ -704,31 +684,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Web_System/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="27" column="16" lean-forward="true" selection-start-line="27" selection-start-column="16" selection-end-line="27" selection-end-column="16" />
-          <folding>
-            <element signature="e#914#1313#0" expanded="false" />
-            <element signature="e#1360#1875#0" expanded="false" />
-            <element signature="e#1967#2338#0" expanded="false" />
-            <element signature="e#2469#2865#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Account_app/models.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="289">
           <caret line="19" column="0" lean-forward="true" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Web_System/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -749,13 +709,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Zlecenie_app/templates/Zlecenie_app/index.html" />
     <entry file="file://$PROJECT_DIR$/Zlecenie_app/templates/Zlecenie_app/modal.html" />
-    <entry file="file://$PROJECT_DIR$/templates/layout.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-204">
-          <caret line="21" column="60" lean-forward="true" selection-start-line="21" selection-start-column="60" selection-end-line="21" selection-end-column="60" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Info_app/templates/Info_app/offer.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -770,38 +723,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Info_app/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="25" column="39" lean-forward="false" selection-start-line="25" selection-start-column="39" selection-end-line="25" selection-end-column="39" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Account_app/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="324">
-          <caret line="60" column="16" lean-forward="false" selection-start-line="60" selection-start-column="16" selection-end-line="60" selection-end-column="16" />
-          <folding>
-            <element signature="e#0#29#0" expanded="false" />
-            <element signature="e#745#786#0" expanded="false" />
-            <element signature="e#1185#1435#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://C:/Program Files (x86)/Python36-32/Lib/site-packages/django/urls/resolvers.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="178">
           <caret line="404" column="0" lean-forward="false" selection-start-line="404" selection-start-column="0" selection-end-line="404" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Account_app/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="5" column="0" lean-forward="true" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -833,14 +758,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="178">
           <caret line="641" column="8" lean-forward="false" selection-start-line="641" selection-start-column="8" selection-end-line="641" selection-end-column="8" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Adres_app/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="27" column="41" lean-forward="false" selection-start-line="27" selection-start-column="41" selection-end-line="27" selection-end-column="41" />
           <folding />
         </state>
       </provider>
@@ -901,14 +818,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Web_System/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="364">
-          <caret line="30" column="0" lean-forward="false" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Zlecenie_app/templates/Zlecenie_app/zlecenie_detail.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="857">
@@ -948,31 +857,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Zlecenie_app/forms.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="6" column="30" lean-forward="false" selection-start-line="6" selection-start-column="30" selection-end-line="6" selection-end-column="30" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Zlecenie_app/models.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="391">
           <caret line="29" column="15" lean-forward="false" selection-start-line="29" selection-start-column="4" selection-end-line="29" selection-end-column="15" />
-          <folding>
-            <element signature="e#0#43#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Zlecenie_app/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="383">
-          <caret line="26" column="75" lean-forward="false" selection-start-line="26" selection-start-column="62" selection-end-line="26" selection-end-column="75" />
-          <folding>
-            <element signature="e#644#676#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1040,24 +929,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Zlecenie_app/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="42" column="0" lean-forward="false" selection-start-line="42" selection-start-column="0" selection-end-line="52" selection-end-column="102" />
-          <folding>
-            <element signature="e#29#44#0" expanded="true" />
-            <element signature="e#2093#2389#0" expanded="false" />
-            <element signature="e#2389#2419#0" expanded="false" />
-            <element signature="e#2751#3879#0" expanded="false" />
-            <element signature="e#3175#3325#0" expanded="false" />
-            <element signature="e#3381#3879#0" expanded="false" />
-            <element signature="e#3927#4022#0" expanded="false" />
-            <element signature="e#4075#4799#0" expanded="false" />
-            <element signature="e#4860#5049#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Zlecenie_app/templates/Zlecenie_app/zlecenie_list.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="408">
@@ -1066,12 +937,147 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Account_app/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="24" column="41" lean-forward="true" selection-start-line="24" selection-start-column="41" selection-end-line="24" selection-end-column="41" />
+          <folding>
+            <element signature="e#745#786#0" expanded="false" />
+            <element signature="e#1185#1435#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Web_System/middleware.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="476">
+          <caret line="28" column="47" lean-forward="false" selection-start-line="28" selection-start-column="47" selection-end-line="28" selection-end-column="47" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Adres_app/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="27" column="41" lean-forward="false" selection-start-line="27" selection-start-column="41" selection-end-line="27" selection-end-column="41" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Info_app/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="22" column="12" lean-forward="false" selection-start-line="22" selection-start-column="12" selection-end-line="22" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/layout.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-14">
+          <caret line="26" column="0" lean-forward="true" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Info_app/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Web_System/login_required.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="6" selection-end-column="77" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Zlecenie_app/forms.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="6" column="30" lean-forward="false" selection-start-line="6" selection-start-column="30" selection-end-line="6" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Web_System/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Zlecenie_app/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="23" column="0" lean-forward="false" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Web_System/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="247">
+          <caret line="23" column="0" lean-forward="true" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
+          <folding>
+            <element signature="e#644#676#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Web_System/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="377">
+          <caret line="115" column="60" lean-forward="true" selection-start-line="115" selection-start-column="60" selection-end-line="115" selection-end-column="60" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Zlecenie_app/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="17" column="0" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="50" />
+          <folding>
+            <element signature="e#30#47#0" expanded="true" />
+            <element signature="e#592#929#0" expanded="false" />
+            <element signature="e#1032#2188#0" expanded="false" />
+            <element signature="e#2587#2617#0" expanded="false" />
+            <element signature="e#3424#3574#0" expanded="false" />
+            <element signature="e#3630#4128#0" expanded="false" />
+            <element signature="e#4176#4271#0" expanded="false" />
+            <element signature="e#4374#5098#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Adres_app/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="88">
-          <caret line="22" column="14" lean-forward="true" selection-start-line="22" selection-start-column="14" selection-end-line="22" selection-end-column="14" />
+        <state relative-caret-position="102">
+          <caret line="11" column="21" lean-forward="false" selection-start-line="11" selection-start-column="21" selection-end-line="11" selection-end-column="21" />
           <folding>
-            <element signature="e#29#78#0" expanded="true" />
+            <element signature="e#29#86#0" expanded="true" />
+            <element signature="e#651#1057#0" expanded="false" />
+            <element signature="e#1157#1340#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Account_app/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="377">
+          <caret line="71" column="19" lean-forward="false" selection-start-line="71" selection-start-column="19" selection-end-line="71" selection-end-column="19" />
+          <folding>
+            <element signature="e#30#86#0" expanded="true" />
+            <element signature="e#501#1144#0" expanded="false" />
+            <element signature="e#1178#1273#0" expanded="false" />
+            <element signature="e#1307#1687#0" expanded="false" />
+            <element signature="e#1724#2239#0" expanded="false" />
+            <element signature="e#2339#2797#0" expanded="false" />
           </folding>
         </state>
       </provider>

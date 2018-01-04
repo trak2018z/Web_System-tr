@@ -3,9 +3,11 @@ Definition of views.
 """
 
 from django.contrib.auth import update_session_auth_hash
+from django.contrib.auth.decorators import login_required
 from django.contrib.auth.forms import PasswordChangeForm
 from django.http import HttpRequest
 from django.shortcuts import render, redirect
+from django.utils.decorators import method_decorator
 from django.views import generic
 
 from Account_app.forms import Edit_Profile_Form, SignUpForm
@@ -68,6 +70,8 @@ def change_password(request):
         args = {'form': form}
         return render(request, 'Account_app/change_password.html', args)
 
+
+@method_decorator(login_required, name='dispatch')
 class view_UserProfile(generic.DetailView):
     template_name = 'Account_app/Userprofileedit.html'
     model = UserProfile

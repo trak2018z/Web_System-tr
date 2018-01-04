@@ -3,8 +3,10 @@ Definition of views.
 """
 
 import googlemaps
+from django.contrib.auth.decorators import login_required
 from django.core.urlresolvers import reverse_lazy
 from django.shortcuts import render
+from django.utils.decorators import method_decorator
 from django.views import generic
 from googlemaps import distance_matrix
 
@@ -14,10 +16,11 @@ from Zlecenie_app.forms import ZleceniaForm, AdresForm
 from .models import Zlecenie
 
 
+@method_decorator(login_required, name='dispatch')
 class ZleceniaListView(generic.ListView):
     template_name = 'Zlecenie_app/zlecenie_list.html'
     context_object_name = 'lista_zlecen'
-
+    login_required = True
     def get_queryset(self):
         if not self.request.user.groups.filter(name='Klient').exists():
             return Zlecenie.objects.all()
@@ -25,6 +28,7 @@ class ZleceniaListView(generic.ListView):
             return Zlecenie.objects.filter(user=self.request.user)
 
 
+@method_decorator(login_required, name='dispatch')
 class ZleceniaDetailView(generic.DetailView):
     model = Zlecenie
 
@@ -54,6 +58,7 @@ class ZleceniaDetailView(generic.DetailView):
             # template_name = 'Zlecenie_app/tmp.html'
 
 
+@method_decorator(login_required, name='dispatch')
 class ZlecenieUpdateView(generic.UpdateView):
     model = Zlecenie
     template_name = 'Zlecenie_app/zlecenie_form.html'
@@ -72,6 +77,7 @@ class ZlecenieUpdateView(generic.UpdateView):
 #
 #     def get_success_url(self):
 #         return reverse_lazy('Zlecenie_app:szczegoly_zamowienia', kwargs={'pk': self.object.pk})
+@method_decorator(login_required, name='dispatch')
 class ZlecenieUpdateView2(generic.UpdateView):
     template_name = 'Zlecenie_app/zlecenie_form.html'
 
@@ -104,6 +110,7 @@ def _get_form(request, formcls, prefix):
     return formcls(data, prefix=prefix)
 
 
+@method_decorator(login_required, name='dispatch')
 class ZlecenieCreateView(generic.CreateView):
     template_name = 'Zlecenie_app/zlecenie_create.html'
     model = Zlecenie
@@ -125,6 +132,7 @@ class ZlecenieCreateView(generic.CreateView):
         #         {'adresform': AdresForm(prefix='adresform_pre'), 'zlecenieform': ZleceniaForm(prefix='zlecenieform_pre')})  #
 
 
+@method_decorator(login_required, name='dispatch')
 class ZlecenieCreate_newAdesView(generic.CreateView):
     model = Adres
     template_name = 'Zlecenie_app/adres_form.html'

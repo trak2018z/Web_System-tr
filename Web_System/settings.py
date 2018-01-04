@@ -124,6 +124,7 @@ STATICFILES_DIRS = (
 PROJECT_DIR = os.path.dirname(os.path.abspath(__file__))
 STATIC_ROOT = os.path.join(PROJECT_DIR, 'static')
 LOGIN_REDIRECT_URL = '/'
+LOGIN_URL = '/account/login'
 # media
 
 print(os.path.join(BASE_DIR, 'Web_System\media'))
