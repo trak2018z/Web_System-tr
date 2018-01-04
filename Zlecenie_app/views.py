@@ -5,7 +5,7 @@ Definition of views.
 import googlemaps
 from django.contrib.auth.decorators import login_required
 from django.core.urlresolvers import reverse_lazy
-from django.shortcuts import render
+from django.http import HttpResponseRedirect
 from django.utils.decorators import method_decorator
 from django.views import generic
 from googlemaps import distance_matrix
@@ -63,6 +63,22 @@ class ZlecenieUpdateView(generic.UpdateView):
         return reverse_lazy('Zlecenie_app:szczegoly_zamowienia', kwargs={'pk': self.object.pk})
 
 
+@method_decorator(login_required, name='dispatch')
+class ZlecenieCreateView(generic.CreateView):
+    template_name = 'Zlecenie_app/zlecenie_create.html'
+    model = Zlecenie
+    fields = ['ilosc_sztuk', 'waga', 'adres_odbioru', 'adres_dostawy', 'data_odbioru',
+              'data_dostarczenia']
+
+    success_url = reverse_lazy('Zlecenie_app:lista_zlecen')
+
+    def form_valid(self, form):
+        user = self.request.user
+        form.instance.user = user
+        self.object = form.save()
+        return HttpResponseRedirect(self.get_success_url())
+
+
 # do poprawki
 @method_decorator(login_required, name='dispatch')
 class ZlecenieUpdateView2(generic.UpdateView):
@@ -95,25 +111,3 @@ class ZlecenieUpdateView2(generic.UpdateView):
 def _get_form(request, formcls, prefix):
     data = request.POST if prefix in request.POST else None
     return formcls(data, prefix=prefix)
-
-
-@method_decorator(login_required, name='dispatch')
-class ZlecenieCreateView(generic.CreateView):
-    template_name = 'Zlecenie_app/zlecenie_create.html'
-    model = Zlecenie
-    fields = ['ilosc_sztuk', 'waga', 'adres_odbioru', 'adres_dostawy', 'data_odbioru',
-              'data_dostarczenia']
-
-    success_url = reverse_lazy('Zlecenie_app:lista_zlecen')
-
-    def form_valid(self, form):
-        user = self.request.user
-        form.instance.user = user
-        self.object = form.save()
-
-        return render(self.request, 'Zlecenie_app/zlecenie_list.html', {'zlecenie': self.object})
-
-        #
-        # def get(self, request, *args, **kwargs):
-        #     return self.render_to_response(
-        #         {'adresform': AdresForm(prefix='adresform_pre'), 'zlecenieform': ZleceniaForm(prefix='zlecenieform_pre')})  #

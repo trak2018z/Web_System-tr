@@ -3,7 +3,7 @@ Definition of views.
 """
 from django.contrib.auth.decorators import login_required
 from django.core.urlresolvers import reverse_lazy
-from django.shortcuts import render
+from django.http import HttpResponseRedirect
 from django.utils.decorators import method_decorator
 from django.views import generic
 
@@ -30,8 +30,7 @@ class AdresCreateView(generic.CreateView):
         user = self.request.user
         form.instance.user = user
         self.object = form.save()
-        return render(self.request, 'Adres_app/adres_list.html', {'adres': self.object})
-
+        return HttpResponseRedirect(self.get_success_url())
 
 @method_decorator(login_required, name='dispatch')
 class AdresUpdateView(generic.UpdateView):

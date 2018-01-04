@@ -5,7 +5,7 @@
 {% endblock %}
 
 {% block content %}
-    <form enctype="multipart/form-data" action="" method="post" id="zlecenie_form" novalidate=""><input type="hidden">
+    <form role="form" action="" method="post">
         {% csrf_token %}
         {{ form.ilosc_sztuk.label_tag }}
         {{ form.ilosc_sztuk }}
@@ -28,7 +28,7 @@
                                     data-toggle="modal" data-model-name="#Modal"
                                     title="Dodaj kolejny adres"><img src="/static/admin/img/icon-addlink.svg"
                                                                      alt="Dodaj"></a>
-        <hr>
+
         <hr>
         {{ form.data_dostarczenia.label_tag }}
         {{ form.data_dostarczenia }}
@@ -37,7 +37,7 @@
         {{ form.data_odbioru }}
         <hr>
         <input type="submit" class="btn btn-primary" name="submit" value="Zapisz">
-        <button type="button" class="btn btn-default" onclick="return ukryj_modal()">
+        <button type="button" class="btn btn-light"><a href="{% url 'Info_app:home' %}">Wroc do listy zlecen</a>
             Anuluj
         </button>
     </form>
