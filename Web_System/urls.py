@@ -13,40 +13,23 @@ Including another URLconf
     1. Import the include() function: from django.conf.urls import url, include
     2. Add a URL to urlpatterns:  url(r'^blog/', include('blog.urls'))
 """
-from datetime import datetime
-import django.contrib.auth.views
-
-import Info_app.views
-import Login_app.forms
-import Login_app.views
-from django.contrib import admin
+from django.conf import settings
 from django.conf.urls import url, include
+from django.conf.urls.static import static
+from django.contrib import admin
+
+from . import views
 
 admin.autodiscover()
 
 urlpatterns = [
-    url(r'^admin/', include(admin.site.urls)),
-    url(r'^$', Info_app.views.home, name='home'),
-    url(r'^contact$', Info_app.views.contact, name='contact'),
-    url(r'^about', Info_app.views.about, name='about'),
-    url(r'^login/$',
-        django.contrib.auth.views.login,
-        {
-            'template_name': 'Login_app/login.html',
-            'authentication_form': Login_app.forms.BootstrapAuthenticationForm,
-            'extra_context':
-                {
-                    'title': 'Logowanie',
-                    'year': datetime.now().year,
-                }
-        },
-        name='login'),
-    url(r'^logout$',
-        django.contrib.auth.views.logout,
-        {
-            'next_page': '/',
-        },
-        name='logout'),
-    url(r'^singup/$', Login_app.views.singup, name='singup'),
+                  url(r'^$', views.home_redirect, name='home_redirect'),
+                  url(r'^admin/', include(admin.site.urls)),
+                  url(r'^account/', include('Account_app.urls', namespace='Account_app')),
+                  url(r'^home/', include('Info_app.urls', namespace='Info_app')),
+                  url(r'^adres/', include('Adres_app.urls', namespace='Adres_app')),
+                  url(r'^zlecenia/', include('Zlecenie_app.urls', namespace='Zlecenie_app')),
+                  url('^', include('django.contrib.auth.urls')),
+                  # url(r'^account/', include('django.contrib.auth.urls'))
 
-]
+              ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
