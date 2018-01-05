@@ -99,9 +99,16 @@ AUTH_PASSWORD_VALIDATORS = [
 # Internationalization
 # https://docs.djangoproject.com/en/1.11/topics/i18n/
 # testing email
-EMAIL_HOST = 'localhost'
-EMAIL_PORT = 1025
+#EMAIL_HOST = 'localhost'
+#EMAIL_PORT = 1025
 
+
+
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_HOST_USER = 'web.transystem@gmail.com'
+EMAIL_HOST_PASSWORD = 'hvm944g8'
+EMAIL_PORT = 587
+EMAIL_USE_TLS = True
 LANGUAGE_CODE = 'pl'
 
 TIME_ZONE = 'Europe/Warsaw'
