@@ -1,0 +1,40 @@
+{% extends "layout.html" %}
+
+{% block content %}
+
+    <div class="container">
+        <div class="row">
+
+            <h1>Lista zleceń</h1>
+
+            <hr>
+            <div class="table-responsive">
+                <table class="table table-responsive-sm">
+                    <thead>
+                    <tr>
+                        <th>Numer zlecenia</th>
+                        <th>Data zlozenia</th>
+                        <th>Status</th>
+                        <th>Warotosc</th>
+                        <th>e-Faktura</th>
+                        <th></th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    {% for zlecenie in lista_zlecen %}
+                        <tr>
+                            <td>{{ zlecenie.pk }}</td>
+                            <td>{{ zlecenie.data_zlozenia }}</td>
+                            <td>{{ zlecenie.get_status_zlecenia_display }}</td>
+                            <td>{{ zlecenie.wartosc }}</td>
+                            <td>{{ zlecenie.faktura }}</td>
+                            <td><a href="{% url 'Zlecenie_app:szczegoly_zamowienia' zlecenie.pk %}"
+                                   class="btn btn-success btn-sm">Wiecej</a></td>
+                        </tr>
+                    {% endfor %}
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+{% endblock %}

@@ -1,0 +1,94 @@
+{% extends "layout.html" %}
+{% load widget_tweaks %}
+{% block content %}
+    <div class="container">
+        <div class="row">
+
+            <h1>Ksiazka adresowa</h1>
+
+            <hr>
+            <div class="row">
+                <!-- przycisk dodaj -->
+                <div class="col-lg-10">
+                    <a onclick="return abrir_modal('{% url 'Adres_app:nowy_adres' %}')" class="button btn btn-success">
+                        Nowy adres
+                    </a>
+                </div>
+            </div>
+
+            <div class="table-responsive">
+                <table class="table table-responsive-sm" id="tablica_adresow">
+                    <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>Nazwa</th>
+                        <th>Ulica</th>
+                        <th>Nr lokalu</th>
+                        <th>Kod pocztowy</th>
+                        <th>Miejscowosc</th>
+                        <th></th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    {% for adres in lista_adresow %}
+                        <tr>
+                            <td>{{ adres.pk }}</td>
+                            <td>{{ adres.nazwa }}</td>
+                            <td>{{ adres.ulica }}</td>
+                            <td>{{ adres.nr }}</td>
+                            <td>{{ adres.kod_pocztowy }}</td>
+                            <td>{{ adres.miasto }}</td>
+                            <td>
+                                <a onclick="return abrir_modal('{% url 'Adres_app:edytuj_adres' adres.pk %}')"
+                                   class="btn btn-success btn-sm" style="color: white">
+                                    Edytuj
+                                </a>
+                                <form action="{% url 'Adres_app:usun_adres' adres.pk %}" method="post"
+                                      style="display: inline;">
+                                    {% csrf_token %}
+                                    <input type="hidden" name="adres.pk" value="{{ adres.pk }}"/>
+                                    <button type="submit" class="btn btn-sm">
+                                        Usun
+                                    </button>
+
+                                </form>
+
+
+                                </a>
+                            </td>
+                        </tr>
+                    {% endfor %}
+                    </tbody>
+                </table>
+            </div>
+            </main>
+        </div>
+
+    </div>
+
+    <!--modal-->
+
+    <div id="Modal" class="modal fade" role="dialog">
+    </div>
+
+
+    <script>
+        function abrir_modal(url) {
+            $('#Modal').load(url, function () {
+                $(this).modal('show');
+            });
+            return false;
+        }
+
+        function nowy_adres() {
+            $('#Modal').modal('hide');
+            return false;
+        }
+
+        $(document).ready(function () {
+            var table = $('#tablica_adresow').dataTable({});
+        });
+    </script>
+
+
+{% endblock %}
