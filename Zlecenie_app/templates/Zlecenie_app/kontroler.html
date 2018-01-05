@@ -2,8 +2,7 @@
 {% block content %}
     <div class="row">
 
-        <h1>Twoje zlecenia</h1>
-
+        <h1>Szczegóły zlecenia</h1>
         <hr>
 
         <div>
@@ -12,6 +11,7 @@
                 <tr>
                     <th>Nr</th>
                     <th>Klient</th>
+                    <th>Imie i nazwisko</th>
                     <th>Data zlozenia</th>
                     <th>Data odbioru</th>
                     <th>Data dostwy</th>
@@ -25,6 +25,7 @@
                 <tr>
                     <td>{{ zlecenie.pk }}</td>
                     <td>{{ zlecenie.user.username }}</td>
+                    <td>{{ zlecenie.user.first_name }} {{ zlecenie.user.last_name }}</td>
                     <td>{{ zlecenie.data_zlozenia }}</td>
                     <td>{{ zlecenie.data_odbioru }}</td>
                     <td>{{ zlecenie.data_dostarczenia }}</td>
@@ -56,6 +57,13 @@
                     <p>{{ zlecenie.adres_dostawy.nazwa }}</p>
                     <p>{{ zlecenie.adres_dostawy.ulica }} {{ zlecenie.adres_dostawy.nr }}</p>
                     <p>{{ zlecenie.adres_dostawy.kod_pocztowy }} {{ zlecenie.adres_dostawy.miasto }}</p>
+                </div>
+                <div class="col-4">
+                    <p><h5>Szczegóły ładunku</h5></p>
+                    <p>Rodzaj: </p>
+                    <p>Ilość miejsc paletowych: {{ zlecenie.ilosc_sztuk }}</p>
+                    <p>Waga ładunku: {{ zlecenie.waga }} kg</p>
+                    <p>Odległość: {{ zlecenie.dystans }} km </p>
                 </div>
             </div>
         </div>

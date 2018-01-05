@@ -4,7 +4,7 @@
 
     <div class="row">
 
-        <h1>Twoje zlecenia</h1>
+        <h1>Szegóły zlecenia</h1>
 
         <hr>
 
@@ -49,6 +49,11 @@
                     <p>{{ zlecenie.adres_dostawy.nazwa }}</p>
                     <p>{{ zlecenie.adres_dostawy.ulica }} {{ zlecenie.adres_dostawy.nr }}</p>
                     {{ zlecenie.adres_dostawy.kod_pocztowy }} {{ zlecenie.adres_dostawy.miasto }}
+                </div>
+                <div class="col-4">
+                    <p><h5>Szczegóły ładunku</h5></p>
+                    <p>Ilość miejsc paletowych: {{ zlecenie.ilosc_sztuk }}</p>
+                    <p>Waga ładunku: {{ zlecenie.waga }}</p>
                 </div>
             </div>
         </div>
