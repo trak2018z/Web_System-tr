@@ -42,3 +42,14 @@ def about(request):
             'year': datetime.now().year,
         }
     )
+def offer(request):
+    """Renders the about page."""
+    assert isinstance(request, HttpRequest)
+    return render(
+        request,
+        'Info_app/offer.html',
+        {
+            'title': 'Oferta',
+            'year': datetime.now().year,
+        }
+    )

@@ -12,9 +12,8 @@ SECRET_KEY = 'l_6gqoe@^f4t@&&*vc9auz%#4yc$d97lpz#8-x@e#cnrz4dqe-'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-#ALLOWED_HOSTS = ['tomel23.pythonanywhere.com']
+# ALLOWED_HOSTS = ['tomel23.pythonanywhere.com']
 ALLOWED_HOSTS = []
-# from mongoengine.django.auth import User
 # Application definition
 
 INSTALLED_APPS = [
@@ -24,8 +23,11 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'Login_app',
     'Info_app',
+    'Account_app',
+    'Adres_app',
+    'Zlecenie_app',
+    'widget_tweaks',
 ]
 
 MIDDLEWARE = [
@@ -96,10 +98,13 @@ AUTH_PASSWORD_VALIDATORS = [
 
 # Internationalization
 # https://docs.djangoproject.com/en/1.11/topics/i18n/
+# testing email
+EMAIL_HOST = 'localhost'
+EMAIL_PORT = 1025
 
-LANGUAGE_CODE = 'en-us'
+LANGUAGE_CODE = 'pl'
 
-TIME_ZONE = 'UTC'
+TIME_ZONE = 'Europe/Warsaw'
 
 USE_I18N = True
 
@@ -111,7 +116,15 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/1.11/howto/static-files/
 
 STATIC_URL = '/static/'
-
+MEDIA_URL = '/media/'
+MEDIA_ROOT = os.path.join(BASE_DIR, 'Web_System\media')
 STATICFILES_DIRS = (
     os.path.join(BASE_DIR, "static"),
 )
+PROJECT_DIR = os.path.dirname(os.path.abspath(__file__))
+STATIC_ROOT = os.path.join(PROJECT_DIR, 'static')
+LOGIN_REDIRECT_URL = '/'
+LOGIN_URL = '/account/login'
+# media
+
+print(os.path.join(BASE_DIR, 'Web_System\media'))
