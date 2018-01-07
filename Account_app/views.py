@@ -15,11 +15,26 @@ from Account_app.forms import Edit_User_Form, SignUpForm
 from Account_app.models import UserProfile
 
 
-# działaja
+@login_required()
 def view_profile(request):
     args = {'user': request.user}
     # return render(request, 'Account_app/account_view.html', args)
     return render(request, 'Account_app/view_form.html', args)
+
+
+@login_required()
+def edit_user(request):
+    if request.method == 'POST':
+        form = Edit_User_Form(request.POST or None, instance=request.user)
+
+        if form.is_valid():
+            user = form.save(commit=False)
+            user.save()
+            return redirect('Account_app:profile')
+    else:
+        form = Edit_User_Form(instance=request.user)
+        args = {'form': form}
+        return render(request, 'Account_app/user_form.html', args)
 
 
 @method_decorator(login_required, name='dispatch')
@@ -33,6 +48,7 @@ class UserProfile_view(generic.ListView):
         return UserProfile.objects.filter(user=self.request.user)
 
 
+@method_decorator(login_required, name='dispatch')
 class userCompanyUpdate(generic.UpdateView):
     model = UserProfile
     template_name = 'Account_app/userCompany_form.html'
@@ -41,6 +57,18 @@ class userCompanyUpdate(generic.UpdateView):
     def get_success_url(self):
         return reverse_lazy('Account_app:profile')
 
+
+@method_decorator(login_required, name='dispatch')
+class userProfileUpdate(generic.UpdateView):
+    model = UserProfile
+    template_name = 'Account_app/userProfile_form.html'
+    fields = ['phone', 'street', 'nr', 'city', 'post_code']
+
+    def get_success_url(self):
+        return reverse_lazy('Account_app:profile')
+
+
+@login_required()
 def change_password(request):
     if request.method == 'POST':
         form = PasswordChangeForm(data=request.POST, user=request.user)
@@ -55,19 +83,6 @@ def change_password(request):
         args = {'form': form}
         return render(request, 'Account_app/change_password.html', args)
 
-
-def edit_user(request):
-    if request.method == 'POST':
-        form = Edit_User_Form(request.POST or None, instance=request.user)
-
-        if form.is_valid():
-            user = form.save(commit=False)
-            user.save()
-            return redirect('Account_app:profile')
-    else:
-        form = Edit_User_Form(instance=request.user)
-        args = {'form': form}
-        return render(request, 'Account_app/user_form.html', args)
 
 def singup(request):
     """Renders the about page."""
@@ -91,33 +106,3 @@ def singup(request):
         # form = UserCreationForm()
 
     return render(request, 'Account_app/singup.html', {'form': form})
-
-
-# do poprawy
-
-
-
-
-
-@method_decorator(login_required, name='dispatch')
-class ZlecenieUpdateView(generic.UpdateView):
-    #    model = Zlecenie
-    template_name = 'Zlecenie_app/zlecenie_form.html'
-    fields = ['status_zlecenia', 'data_odbioru',
-              'data_dostarczenia', 'wartosc']
-
-    def get_success_url(self):
-        return reverse_lazy('Zlecenie_app:szczegoly_zamowienia', kwargs={'pk': self.object.pk})
-
-
-
-
-
-class userProfileUpdate(generic.UpdateView):
-    model = UserProfile
-    template_name = 'Account_app/userProfile_form.html'
-    fields = ['phone', 'street', 'nr', 'city', 'post_code']
-
-    def get_success_url(self):
-        return reverse_lazy('Account_app:profile')
-

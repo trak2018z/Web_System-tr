@@ -8,6 +8,15 @@
             <h1>Lista zleceń</h1>
 
             <hr>
+
+            <div class="row">
+                <!-- przycisk dodaj -->
+                <div class="col-lg-10">
+                    <a href="{% url 'Zlecenie_app:nowe_zlecenie' %}" class="button btn btn-primary">
+                        Nowe zlecenie
+                    </a>
+                </div>
+            </div>
             <div class="table-responsive">
                 <table class="table table-responsive-sm">
                     <thead>
@@ -29,7 +38,7 @@
                             <td>{{ zlecenie.wartosc }}</td>
                             <td>{{ zlecenie.faktura }}</td>
                             <td><a href="{% url 'Zlecenie_app:szczegoly_zamowienia' zlecenie.pk %}"
-                                   class="btn btn-success btn-sm">Wiecej</a></td>
+                                   class="btn btn-primary btn-sm">Wiecej</a></td>
                         </tr>
                     {% endfor %}
                     </tbody>

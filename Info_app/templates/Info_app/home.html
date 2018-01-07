@@ -2,32 +2,41 @@
 
 {% block content %}
 
-<div class="jumbotron">
-    <h1>E-transport</h1>
-    <p class="lead">.</p>
-   <!-- <p><a href="https://www.djangoproject.com/" class="btn btn-primary btn-large">Learn more &raquo;</a></p>-->
-</div>
+    <div class="jumbotron">
+        <h1>E-transport</h1>
+        <p class="lead">.</p>
+        <!-- <p><a href="https://www.djangoproject.com/" class="btn btn-primary btn-large">Learn more &raquo;</a></p>-->
+    </div>
+    <div class="row">
+        <div class="col-md-4">
+            <h2>Oferta</h2>
+            <p>
+                „Oferujemy Państwu usługę transportu towarów
+                w ruchu krajowym i międzynarodowym przede
+                wszystkim na terenie Unii Europejskiej i Szwajcarii.
+            </p>
+            <p><a class="btn btn-default" href="{% url 'Info_app:offer' %} }}">Czytaj więcej &raquo;</a></p>
+        </div>
+        <div class="col-md-4">
+            <h2>Nasze atuty </h2>
+            <ul>
+                <li>Indywidualne podejście do każdego Klienta</li>
+                <li>Elastyczność i skuteczność</li>
+                <li>Atrakcyjne stawki i przejrzystość rozliczeń</li>
+                <li>Kompleksowość obsługi</li>
+                <li>Globalny zakres</li>
+                <li>Jakość i terminowość</li>
+                <li>Profesjonalne wsparcie</li>
+            </ul>
+        </div>
+        <div class="col-md-4">
+            <h2>Zamów transport</h2>
+            <p>W celu zapewnienia wygodnej i profesjonalenej obsługi wypełnij formularz i śledź co się dzieje z twoim
+                trnasportem .</p>
+            <p><a class="btn btn-default" href="{% url 'Zlecenie_app:nowe_zlecenie' %}">Formularz zlecenia &raquo;</a>
+            </p>
+        </div>
 
-<div class="row">
-    <div class="col-md-4">
-        <h2>Oferta</h2>
-        <p>
-            „Oferujemy Państwu usługę transportu towarów
-            w ruchu krajowym i międzynarodowym przede
-            wszystkim na terenie Unii Europejskiej i Szwajcarii.
-        </p>
-        <p><a class="btn btn-default" href="{% url 'Info_app:offer' %} }}">Czytaj więcej &raquo;</a></p>
     </div>
-    <div class="col-md-4">
-        <h2>Zamów transport</h2>
-        <p>The Python Package Index is a repository of software for the Python programming language.</p>
-        <p><a class="btn btn-default" href="https://pypi.org/">Learn more &raquo;</a></p>
-    </div>
-    <div class="col-md-4">
-        <h2>Wyceń</h2>
-        <p>You can easily publish to Microsoft Azure using Visual Studio. Find out how you can host your application using a free trial today.</p>
-        <p><a class="btn btn-default" href="http://azure.microsoft.com">Learn more &raquo;</a></p>
-    </div>
-</div>
 
 {% endblock %}

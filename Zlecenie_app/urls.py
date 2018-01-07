@@ -24,7 +24,7 @@ urlpatterns = [
     url(r'^$', views.ZleceniaListView.as_view(), name='lista_zlecen'),
     url(r'^(?P<pk>[0-9]+)/edytuj/$', views.ZlecenieUpdateView.as_view(), name='edytuj_zlecenie'),
     url(r'^(?P<pk>[0-9]+)', views.ZleceniaDetailView.as_view(), name='szczegoly_zamowienia'),
-
+    # url(r'^nowe_kontroler/$', views.ZlecenieKontrolerCreateView.as_view(), name='nowe_zlecenie_kontroler'),
     url(r'^nowe/$', views.ZlecenieCreateView.as_view(), name='nowe_zlecenie'),
     url(r'^nowe/adres$', views.ZlecenieCreate_newAdesView.as_view(), name='nowe_adres'),
 ]

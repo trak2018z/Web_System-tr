@@ -33,7 +33,7 @@
                     <td>{{ zlecenie.wartosc }}</td>
                     <td>{{ zlecenie.faktura }}</td>
                     <td>
-                        <button type="button" class="btn btn-warning btn-sm"
+                        <button type="button" class="btn btn-primary btn-sm"
                                 onclick="return abrir_modal('{% url 'Zlecenie_app:edytuj_zlecenie' zlecenie.pk %}')"
                                 data-toggle="modal" data-target="#Modal">
                             Edytuj
@@ -69,7 +69,7 @@
         </div>
     </div>
     <p>
-        <a class="btn btn-primary" href="{% url 'Zlecenie_app:lista_zlecen' %}">Wroc do listy zlecen</a>
+        <a class="btn btn-secondary" href="{% url 'Zlecenie_app:lista_zlecen' %}">Wroc do listy zlecen</a>
     </p>
 
 
