@@ -12,7 +12,7 @@ from django.urls import reverse_lazy
 from django.utils.decorators import method_decorator
 from django.views import generic
 
-from Account_app.forms import Edit_Profile_Form, SignUpForm, UserProfile_Form
+from Account_app.forms import Edit_User_Form, SignUpForm
 from Account_app.models import UserProfile
 
 
@@ -34,6 +34,14 @@ class UserProfile_view(generic.ListView):
         return UserProfile.objects.filter(user=self.request.user)
 
 
+class userCompanyUpdate(generic.UpdateView):
+    model = UserProfile
+    template_name = 'Account_app/userCompany_form.html'
+    fields = ['company', 'company_city', 'company_street', 'company_nr', 'company_post_code', 'company_nip']
+
+    def get_success_url(self):
+        return reverse_lazy('Account_app:profile')
+
 def change_password(request):
     if request.method == 'POST':
         form = PasswordChangeForm(data=request.POST, user=request.user)
@@ -48,6 +56,19 @@ def change_password(request):
         args = {'form': form}
         return render(request, 'Account_app/change_password.html', args)
 
+
+def edit_user(request):
+    if request.method == 'POST':
+        form = Edit_User_Form(request.POST or None, instance=request.user)
+
+        if form.is_valid():
+            user = form.save(commit=False)
+            user.save()
+            return redirect('Account_app:profile')
+    else:
+        form = Edit_User_Form(instance=request.user)
+        args = {'form': form}
+        return render(request, 'Account_app/user_form.html', args)
 
 def singup(request):
     """Renders the about page."""
@@ -74,34 +95,32 @@ def singup(request):
 
 
 # do poprawy
-def edit_profile(request):
-    if request.method == 'POST':
-        form = Edit_Profile_Form(request.POST, isinstance=request.user)
-
-        if form.is_valid():
-            form.save()
-            return redirect('Account_app/account_view.html')
-    else:
-        form = Edit_Profile_Form(instance=request.user)
-        args = {'form': form}
-        return render(request, 'Account_app/account_view.html', args)
 
 
-class userCompanyUpdate(generic.UpdateView):
-    model = UserProfile
-    form_class = UserProfile_Form
-    success_url = reverse_lazy('Account_app:profile')
-    template_name = 'Adres_app/adres_form.html'
-    fields = ['company', 'company_city', 'company_street', 'company_nr', 'company_post_code', 'company_nip']
+
+
+
+@method_decorator(login_required, name='dispatch')
+class ZlecenieUpdateView(generic.UpdateView):
+    #    model = Zlecenie
+    template_name = 'Zlecenie_app/zlecenie_form.html'
+    fields = ['status_zlecenia', 'data_odbioru',
+              'data_dostarczenia', 'wartosc']
+
+    def get_success_url(self):
+        return reverse_lazy('Zlecenie_app:szczegoly_zamowienia', kwargs={'pk': self.object.pk})
+
+
+
 
 
 class userProfileUpdate(generic.UpdateView):
     model = UserProfile
-    form_class = UserProfile_Form
-    fields = ['phone', 'street', 'nr', 'city', 'post_code']
-    success_url = reverse_lazy('Account_app:profile')
     template_name = 'Account_app/user_form.html'
+    fields = ['phone', 'street', 'nr', 'city', 'post_code']
 
+    def get_success_url(self):
+        return reverse_lazy('Account_app:profile')
 
 @method_decorator(login_required, name='dispatch')
 class UserUpdate(generic.UpdateView):

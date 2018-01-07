@@ -27,11 +27,12 @@ urlpatterns = [
     }, name='logout'),
     url(r'^singup/$', Account_app.views.singup, name='singup'),
     url(r'^profile/', Account_app.views.UserProfile_view.as_view(), name='profile'),
-
-    url(r'^profile/user/Prolfile/(?P<pk>[0-9]+)$', Account_app.views.userProfileUpdate.as_view(),
-        name='userProfile_edit'),
-    url(r'^profile/(?P<pk>[0-9]+)$', Account_app.views.UserUpdate.as_view(), name='user_edit'),
-    url(r'^profile/user/Company(?P<pk>[0-9]+)$', Account_app.views.userCompanyUpdate.as_view(), name='company-update'),
     url(r'^password_change/$', Account_app.views.change_password, name='change-password'),
+    url(r'^edit/$', Account_app.views.edit_user, name='edytuj-profil'),
+    url(r'^userCompany/(?P<pk>[0-9]+)$', Account_app.views.userCompanyUpdate.as_view(), name='company-update'),
+
+    url(r'^userProfile/(?P<pk>[0-9]+)$', Account_app.views.userProfileUpdate.as_view(), name='userProfile_edit'),
+
+
 
 ]

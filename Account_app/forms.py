@@ -1,5 +1,4 @@
 from django import forms
-from django.contrib.auth.forms import UserChangeForm
 from django.contrib.auth.forms import UserCreationForm, AuthenticationForm
 from django.contrib.auth.models import User
 
@@ -39,7 +38,7 @@ class SignUpForm(UserCreationForm):
         return user
 
 
-class Edit_Profile_Form(UserChangeForm):
+class Edit_User_Form(forms.ModelForm):
     class Meta:
         model = User
         fields = (
