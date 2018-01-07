@@ -21,7 +21,6 @@ from .models import Zlecenie
 class ZleceniaListView(generic.ListView):
     template_name = 'Zlecenie_app/zlecenie_list.html'
     context_object_name = 'lista_zlecen'
-    login_required = True
 
     def get_queryset(self):
         if not self.request.user.groups.filter(name='Klient').exists():
@@ -76,6 +75,7 @@ class ZlecenieCreateView(generic.CreateView):
         user = self.request.user
         form.instance.user = user
         self.object = form.save()
+        # send_mail('subject', 'body of the message', 'noreply@bottlenose.co', ['vitor@freitas.com'])
         return HttpResponseRedirect(self.get_success_url())
 
 

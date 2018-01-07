@@ -54,3 +54,9 @@ class UserProfile_Form(forms.ModelForm):
     class Meta:
         model = UserProfile
         fields = '__all__'
+
+
+class User_Form(forms.ModelForm):
+    class Meta:
+        model = User
+        fields = '__all__'
