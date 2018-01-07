@@ -5,7 +5,6 @@ Definition of views.
 from django.contrib.auth import update_session_auth_hash
 from django.contrib.auth.decorators import login_required
 from django.contrib.auth.forms import PasswordChangeForm
-from django.contrib.auth.models import User
 from django.http import HttpRequest
 from django.shortcuts import render, redirect
 from django.urls import reverse_lazy
@@ -116,20 +115,9 @@ class ZlecenieUpdateView(generic.UpdateView):
 
 class userProfileUpdate(generic.UpdateView):
     model = UserProfile
-    template_name = 'Account_app/user_form.html'
+    template_name = 'Account_app/userProfile_form.html'
     fields = ['phone', 'street', 'nr', 'city', 'post_code']
 
     def get_success_url(self):
         return reverse_lazy('Account_app:profile')
 
-@method_decorator(login_required, name='dispatch')
-class UserUpdate(generic.UpdateView):
-    model = User
-    fields = ['first_name', 'last_name', 'email']
-    template_name = 'Account_app/user_form.html'
-
-    def get_success_url(self):
-        return reverse_lazy('Account_app:profile')
-
-    def get_object(self):
-        return self.request.user

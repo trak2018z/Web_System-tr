@@ -31,7 +31,7 @@ urlpatterns = [
     url(r'^edit/$', Account_app.views.edit_user, name='edytuj-profil'),
     url(r'^userCompany/(?P<pk>[0-9]+)$', Account_app.views.userCompanyUpdate.as_view(), name='company-update'),
 
-    url(r'^userProfile/(?P<pk>[0-9]+)$', Account_app.views.userProfileUpdate.as_view(), name='userProfile_edit'),
+    url(r'^userProfile/(?P<pk>[0-9]+)$', Account_app.views.userProfileUpdate.as_view(), name='userProfile-update'),
 
 
 

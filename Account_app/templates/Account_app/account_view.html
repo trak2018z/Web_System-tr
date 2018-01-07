@@ -1,0 +1,105 @@
+{% extends "layout.html" %}
+{% block content %}
+    <div id="tabs">
+        <div class="nav nav-tabs" id="nav-tab" role="tablist">
+            <a class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab"
+               aria-controls="nav-home" aria-selected="true">Profil</a>
+            <a class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab"
+               aria-controls="nav-profile" aria-selected="false">Dane klienta</a>
+            <a class="nav-item nav-link" id="nav-comany-tab" data-toggle="tab" href="#nav-company" role="tab"
+               aria-controls="nav-profile" aria-selected="false">Firma</a>
+        </div>
+        <div class="tab-content" id="nav-tabContent">
+            <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+                <h4>Profil użytkownika
+
+                    <button type="button" class="btn btn-warning btn-sm"
+                            onclick="return abrir_modal('{% url 'Account_app:change-password' %}')"
+                            data-toggle="modal" data-target="#Modal">
+                        Zmień hasło
+                    </button>
+
+                    <button type="button" class="btn btn-warning btn-sm"
+                            onclick="return abrir_modal('{% url 'Account_app:edytuj-profil' %}')"
+                            data-toggle="modal" data-target="#Modal">
+                        Edytuj profil
+                    </button>
+                </h4>
+                <p>Nazwa użytkownika: {{ user.username }}</p>
+                <hr>
+                <p>Imie: {{ user.first_name }}</p>
+                <hr>
+                <p>Nazwisko: {{ user.last_name }}</p>
+                <hr>
+                <p>E-mail: {{ user.email }}</p>
+                <hr>
+                <p>Data rejestracji: {{ user.date_joined }}</p>
+            </div>
+            <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab"
+                 href="{% url 'Account_app:profile' %}">
+                {% for userProfile in user_profile_list %}
+                    <h4>Dane adresowe
+                        <button type="button" class="btn btn-warning btn-sm"
+                                onclick="return abrir_modal('{% url 'Account_app:userProfile-update' userProfile.pk %}')"
+                                data-toggle="modal" data-target="#Modal">
+                            Edytuj dane klienta
+                        </button>
+                    </h4>
+                    <hr>
+                    <p>Nr telefonu: {{ userProfile.phone }}</p>
+                    <hr>
+                    <p>Dane adresowe: </p>
+                    <hr>
+                    <p>Ulica: {{ userProfile.street }} nr: {{ userProfile.nr }}</p>
+                    <hr>
+                    <p>Kod pocztowy: {{ userProfile.post_code }} miasto: {{ userProfile.city }}</p>
+                    <hr>
+                {% endfor %}
+            </div>
+            <div class="tab-pane fade" id="nav-company" role="tabpanel" aria-labelledby="nav-profile-tab"
+                 href="{% url 'Account_app:profile' %}">
+                {% for userProfile in user_profile_list %}
+                    <h4>Dane do faktury
+                        <button type="button" class="btn btn-warning btn-sm"
+                                onclick="return abrir_modal('{% url 'Account_app:company-update' userProfile.pk %}')"
+                                data-toggle="modal" data-target="#Modal">
+                            Edytuj dane firmy
+                        </button>
+                    </h4>
+                    <hr>
+                    <p>Nazwa firmy: {{ userProfile.company }}</p>
+                    <hr>
+                    <p>Telefon: {{ userProfile.company_phone }}</p>
+                    <hr>
+                    <p>Ulica: {{ userProfile.companystreet }} nr: {{ userProfile.company_nr }}</p>
+                    <hr>
+                    <p>Kod pocztowy: {{ userProfile.company_post_code }} miasto: {{ userProfile.company_city }}</p>
+                    <hr>
+                    <p>NIP: {{ userProfile.company_nip }}</p>
+                    <hr>
+                {% endfor %}
+
+            </div>
+        </div>
+    </div>
+
+    <div class="modal" id="Modal" tabindex="0" role="dialog"></div>
+
+    <script>
+        function abrir_modal(url) {
+            $('#Modal').load(url, function () {
+                $(this).modal('show');
+            });
+            return false;
+        }
+
+        function ukryj_modal() {
+            $('#Modal').modal('hide');
+            return false;
+        }
+
+        $(document).ready(function () {
+            var table = $('#tablica_adresow').dataTable({});
+        });
+    </script>
+{% endblock %}
