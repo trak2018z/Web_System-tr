@@ -1,0 +1,55 @@
+{% extends "layout.html" %}
+
+{% block content %}
+
+    <form method="get" action="">
+        <h4>Filtruj</h4>
+        <p>Nr zlecenia: <input type="text" name="qint" value="{{ reguest.GET.qint }}" placeholder="numer zlecenia"/></p>
+        <p>Nazwa uzytkownika: <input type="text" name="qstr" value="{{ reguest.GET.qstr }}"
+                                     placeholder="nazwa użytkownika"/></p>
+        <p>Imię i Nazwisko uzytkownika: <input type="text" name="qname" value="{{ reguest.GET.qname }}"
+                                               placeholder="imie i nazwisko"/>
+            <input type="submit" class="btn btn-sm btn-primary" name="submit" value="Szukaj"/></p>
+    </form>
+
+
+    <div class="container">
+        <div class="row">
+
+            <h1>Lista zleceń</h1>
+
+            <hr>
+            <div class="table-responsive">
+                <table class="table table-responsive-sm">
+                    <thead>
+                    <tr>
+                        <th>Numer zlecenia</th>
+                        <th>Klient</th>
+                        <th>Imie i nazwisko</th>
+                        <th>Data zlozenia</th>
+                        <th>Status</th>
+                        <th>Warotosc</th>
+                        <th>e-Faktura</th>
+                        <th></th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    {% for zlecenie in lista_zlecen %}
+                        <tr>
+                            <td>{{ zlecenie.pk }}</td>
+                            <td>{{ zlecenie.user.username }}</td>
+                            <td>{{ zlecenie.user.first_name }} {{ zlecenie.user.last_name }}</td>
+                            <td>{{ zlecenie.data_zlozenia }}</td>
+                            <td>{{ zlecenie.get_status_zlecenia_display }}</td>
+                            <td>{{ zlecenie.wartosc }}</td>
+                            <td>{{ zlecenie.faktura }}</td>
+                            <td><a href="{% url 'Zlecenie_app:szczegoly_zamowienia' zlecenie.pk %}"
+                                   class="btn btn-primary btn-sm">Wiecej</a></td>
+                        </tr>
+                    {% endfor %}
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+{% endblock %}

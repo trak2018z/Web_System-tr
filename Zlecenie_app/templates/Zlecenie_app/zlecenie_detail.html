@@ -1,0 +1,64 @@
+{% extends "layout.html" %}
+
+{% block content %}
+
+    <div class="row">
+
+        <h1>Szegóły zlecenia</h1>
+
+        <hr>
+
+        <div>
+            <table class="table table-responsive-md " style="grid-column-gap:0px ">
+                <thead>
+                <tr>
+                    <th>Nr</th>
+                    <th>Klient</th>
+                    <th>Data zlozenia</th>
+                    <th>Data odbioru</th>
+                    <th>Data dostwy</th>
+                    <th>Status</th>
+                    <th>Wartosc</th>
+                    <th>e-Faktura</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>{{ zlecenie.pk }}</td>
+                    <td>{{ zlecenie.data_zlozenia }}</td>
+                    <td>{{ zlecenie.data_odbioru }}</td>
+                    <td>{{ zlecenie.data_dostarczenia }}</td>
+                    <td>{{ zlecenie.get_status_zlecenia_display }}</td>
+                    <td>{{ zlecenie.wartosc }}</td>
+                    <td>{{ zlecenie.faktura }}</td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-4">
+                    <p><h5>Adres odbioru</h5></p>
+                    <p>{{ zlecenie.adres_odbioru.nazwa }} </p>
+                    <p>{{ zlecenie.adres_odbioru.ulica }} {{ zlecenie.adres_odbioru.nr }}</p>
+                    <p>{{ zlecenie.adres_odbioru.kod_pocztowy }} {{ zlecenie.adres_odbioru.miasto }}</p>
+                </div>
+                <div class="col-4">
+                    <p><h5>Adres dostawy</h5></p>
+                    <p>{{ zlecenie.adres_dostawy.nazwa }}</p>
+                    <p>{{ zlecenie.adres_dostawy.ulica }} {{ zlecenie.adres_dostawy.nr }}</p>
+                    {{ zlecenie.adres_dostawy.kod_pocztowy }} {{ zlecenie.adres_dostawy.miasto }}
+                </div>
+                <div class="col-4">
+                    <p><h5>Szczegóły ładunku</h5></p>
+                    <p>Ilość miejsc paletowych: {{ zlecenie.ilosc_sztuk }}</p>
+                    <p>Waga ładunku: {{ zlecenie.waga }}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <a class="btn btn-secondary" href="{% url 'Zlecenie_app:lista_zlecen' %}">Wroc do listy zlecen</a>
+
+
+
+{% endblock %}

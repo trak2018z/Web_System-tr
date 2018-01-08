@@ -1,0 +1,70 @@
+{% extends "layout.html" %}
+
+{% block head %}
+    <title>Nw</title>
+{% endblock %}
+
+{% block content %}
+    <h3>Nowe zlecenie</h3>
+    <br>
+    <hr>
+    <form role="form" action="" method="post">
+        {% csrf_token %}
+        {{ form.ilosc_sztuk.label_tag }}
+        {{ form.ilosc_sztuk }}
+        <br>
+
+        {{ form.waga.label_tag }}
+        {{ form.waga }}
+        <br>
+
+        <p>Wybierz adres z kisiążki adresowej lub nacisnij przycisk "plus" i wprowadz nowy adres a następnie wybierz go
+            z listy </p>
+        {{ form.adres_dostawy.label_tag }}
+        {{ form.adres_dostawy }} <a class="related-widget-wrapper-link add-related" id="add_adres"
+                                    onclick="abrir_modal('{% url 'Zlecenie_app:nowe_adres' %}')"
+                                    data-toggle="modal" data-model-name="#Modal"
+                                    title="Dodaj kolejny adres"><img src="/static/admin/img/icon-addlink.svg"
+                                                                     alt="Dodaj"></a>
+        <br>
+
+        {{ form.adres_odbioru.label_tag }}
+        {{ form.adres_odbioru }} <a class="related-widget-wrapper-link add-related" id="add_adres"
+                                    onclick="abrir_modal('{% url 'Zlecenie_app:nowe_adres' %}')"
+                                    data-toggle="modal" data-model-name="#Modal"
+                                    title="Dodaj kolejny adres"><img src="/static/admin/img/icon-addlink.svg"
+                                                                     alt="Dodaj"></a>
+
+        <br>
+
+        {{ form.data_dostarczenia.label_tag }}
+        {{ form.data_dostarczenia }}
+        <br>
+
+        {{ form.data_odbioru.label_tag }}
+        {{ form.data_odbioru }}
+        <br>
+
+        <input type="submit" class="btn btn-primary" name="submit" value="Zapisz">
+        <a class="btn btn-secondary" href="{% url 'Zlecenie_app:lista_zlecen' %}">Przejdź do listy zlecen</a>
+    </form>
+
+    <div class="modal" id="Modal" tabindex="-1" role="dialog"></div>
+    <script>
+        function abrir_modal(url) {
+            $('#Modal').load(url, function () {
+                $(this).modal('show');
+            });
+            return false;
+        }
+
+        function ukryj_modal() {
+            $('#Modal').modal('hide');
+            return false;
+        }
+
+        $(document).ready(function () {
+            var table = $('#tablica_adresow').dataTable({});
+        });
+    </script>
+{% endblock %}
