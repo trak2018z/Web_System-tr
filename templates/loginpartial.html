@@ -1,8 +1,9 @@
 {% if user.is_authenticated %}
-    <form id="logoutForm" action="{% url 'Account_app:logout' %}" method="post" class="navbar-right">
+    <form id="logoutForm" action="{% url 'Account_app:logout' %}" method="post" class="navbar-right"
+          style="margin-right: 10%;">
     {% csrf_token %}
 
-    <ul class="nav navbar-nav navbar-right">
+        <ul class="nav navbar-nav">
         <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="http://example.com" id="navbarDropdownMenuLink"
                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">{{ user.username }} <span

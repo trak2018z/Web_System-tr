@@ -16,3 +16,6 @@ class Adres(models.Model):
 
     def get_absolute_url(self):
         return reverse('Adres_app:lista_adresow', kwargs={'pk': self.pk})
+
+    class Meta:
+        unique_together = ('user', 'nazwa',)

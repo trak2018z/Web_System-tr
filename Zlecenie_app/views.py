@@ -1,7 +1,6 @@
 """
 Definition of views.
 """
-
 from django.contrib.auth.decorators import login_required
 from django.core.urlresolvers import reverse_lazy
 from django.db.models import Q
@@ -77,7 +76,6 @@ class ZlecenieUpdateView(generic.UpdateView):
 
     def get_success_url(self):
         return reverse_lazy('Zlecenie_app:szczegoly_zamowienia', kwargs={'pk': self.object.pk})
-
 
 @method_decorator(login_required, name='dispatch')
 class ZlecenieCreateView(generic.CreateView):

@@ -13,13 +13,13 @@
             <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
                 <h4>Profil użytkownika
 
-                    <button type="button" class="btn btn-warning btn-sm"
+                    <button type="button" class="btn btn-primary btn-sm"
                             onclick="return abrir_modal('{% url 'Account_app:change-password' %}')"
                             data-toggle="modal" data-target="#Modal">
                         Zmień hasło
                     </button>
 
-                    <button type="button" class="btn btn-warning btn-sm"
+                    <button type="button" class="btn btn-primary btn-sm"
                             onclick="return abrir_modal('{% url 'Account_app:edytuj-profil' %}')"
                             data-toggle="modal" data-target="#Modal">
                         Edytuj profil
@@ -39,20 +39,20 @@
                  href="{% url 'Account_app:profile' %}">
                 {% for userProfile in user_profile_list %}
                     <h4>Dane adresowe
-                        <button type="button" class="btn btn-warning btn-sm"
+                        <button type="button" class="btn btn-primary btn-sm"
                                 onclick="return abrir_modal('{% url 'Account_app:userProfile-update' userProfile.pk %}')"
                                 data-toggle="modal" data-target="#Modal">
                             Edytuj dane klienta
                         </button>
                     </h4>
                     <hr>
-                    <p>Nr telefonu: {{ userProfile.phone }}</p>
+                    <p>Nr telefonu: {{ userProfile.nr_telefonu }}</p>
                     <hr>
                     <p>Dane adresowe: </p>
                     <hr>
-                    <p>Ulica: {{ userProfile.street }} nr: {{ userProfile.nr }}</p>
+                    <p>Ulica: {{ userProfile.ulica }} nr: {{ userProfile.nr_domu }}</p>
                     <hr>
-                    <p>Kod pocztowy: {{ userProfile.post_code }} miasto: {{ userProfile.city }}</p>
+                    <p>Kod pocztowy: {{ userProfile.kod_pocztowy }} miasto: {{ userProfile.miasto }}</p>
                     <hr>
                 {% endfor %}
             </div>
@@ -60,22 +60,22 @@
                  href="{% url 'Account_app:profile' %}">
                 {% for userProfile in user_profile_list %}
                     <h4>Dane do faktury
-                        <button type="button" class="btn btn-warning btn-sm"
+                        <button type="button" class="btn btn-primary btn-sm"
                                 onclick="return abrir_modal('{% url 'Account_app:company-update' userProfile.pk %}')"
                                 data-toggle="modal" data-target="#Modal">
                             Edytuj dane firmy
                         </button>
                     </h4>
                     <hr>
-                    <p>Nazwa firmy: {{ userProfile.company }}</p>
+                    <p>Nazwa firmy: {{ userProfile.nazwa_firmy }}</p>
                     <hr>
-                    <p>Telefon: {{ userProfile.company_phone }}</p>
+                    <p>Telefon: {{ userProfile.telefon_firmy }}</p>
                     <hr>
-                    <p>Ulica: {{ userProfile.companystreet }} nr: {{ userProfile.company_nr }}</p>
+                    <p>Ulica: {{ userProfile.ulica_firmy }} nr: {{ userProfile.nr_firmy }}</p>
                     <hr>
-                    <p>Kod pocztowy: {{ userProfile.company_post_code }} miasto: {{ userProfile.company_city }}</p>
+                    <p>Kod pocztowy: {{ userProfile.kod_pocztowy_firmy }} miasto: {{ userProfile.miasto_firmy }}</p>
                     <hr>
-                    <p>NIP: {{ userProfile.company_nip }}</p>
+                    <p>NIP: {{ userProfile.nip_firmy }}</p>
                     <hr>
                 {% endfor %}
 

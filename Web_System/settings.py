@@ -64,21 +64,9 @@ WSGI_APPLICATION = 'Web_System.wsgi.application'
 # Database
 
 import MySQLdb
+from .database import *
 
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.mysql',
-        # 'NAME': 'tomel23$Web_System_Data',
-        'NAME': 'Web_System',
-        # 'USER': 'tomel23',
-        'USER': 'root',
-        '#PASSWORD': 'hvm944g8',
-        'PASSWORD': '',
-        # 'HOST': 'tomel23.mysql.pythonanywhere-services.com',
-        'HOST': '127.0.0.1',
-        'PORT': 3306,
-    }
-}
+DATABASES = DATABASES
 # Password validation
 # https://docs.djangoproject.com/en/1.11/ref/settings/#auth-password-validators
 
@@ -97,21 +85,14 @@ AUTH_PASSWORD_VALIDATORS = [
     },
 ]
 
-# Internationalization
-# https://docs.djangoproject.com/en/1.11/topics/i18n/
-# testing email
+from . import email
 
-#EMAIL_HOST = 'localhost'
-#EMAIL_PORT = 1025
-
-
-
-EMAIL_HOST = 'smtp.gmail.com'
-EMAIL_HOST_USER = 'web.transystem@gmail.com'
-EMAIL_HOST_PASSWORD = 'hvm944g8'
-EMAIL_PORT = 587
-EMAIL_USE_TLS = True
-LANGUAGE_CODE = 'pl'
+EMAIL_HOST = email.EMAIL_HOST
+EMAIL_HOST_USER = email.EMAIL_HOST_USER
+EMAIL_HOST_PASSWORD = email.EMAIL_HOST_PASSWORD
+EMAIL_PORT = email.EMAIL_PORT
+EMAIL_USE_TLS = email.EMAIL_USE_TLS
+LANGUAGE_CODE = email.LANGUAGE_CODE
 
 
 TIME_ZONE = 'Europe/Warsaw'

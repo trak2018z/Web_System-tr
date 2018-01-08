@@ -52,7 +52,8 @@ class UserProfile_view(generic.ListView):
 class userCompanyUpdate(generic.UpdateView):
     model = UserProfile
     template_name = 'Account_app/userCompany_form.html'
-    fields = ['company', 'company_city', 'company_street', 'company_nr', 'company_post_code', 'company_nip']
+    fields = ['telefon_firmy', 'nazwa_firmy', 'miasto_firmy', 'ulica_firmy', 'nr_firmy', 'kod_pocztowy_firmy',
+              'nip_firmy']
 
     def get_success_url(self):
         return reverse_lazy('Account_app:profile')
@@ -62,7 +63,7 @@ class userCompanyUpdate(generic.UpdateView):
 class userProfileUpdate(generic.UpdateView):
     model = UserProfile
     template_name = 'Account_app/userProfile_form.html'
-    fields = ['phone', 'street', 'nr', 'city', 'post_code']
+    fields = ['nr_telefonu', 'ulica', 'nr_domu', 'miasto', 'kod_pocztowy']
 
     def get_success_url(self):
         return reverse_lazy('Account_app:profile')
@@ -92,13 +93,6 @@ def singup(request):
         form = SignUpForm(request.POST)
         if form.is_valid():
             form.save()
-            # user.save()
-
-            # username = form.cleaned_data.get('username')
-            # raw_password = form.cleaned_data.get('password1')
-            # user = authenticate(username=username, password=raw_password)
-            # login(request, user)
-
             return redirect('Account_app:login')
 
     else:
