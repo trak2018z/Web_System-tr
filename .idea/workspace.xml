@@ -2,42 +2,25 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="feb2ebf3-29a4-42c1-a8f2-dea6b392ce1f" name="Default" comment="Wersja koncowa projektu">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Account_app/migrations/0003_auto_20180108_1443.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Account_app/migrations/0004_auto_20180108_1450.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Adres_app/migrations/0005_auto_20180108_1443.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Web_System/database.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Web_System/email.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Zlecenie_app/forms.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Zlecenie_app/templates/Zlecenie_app/zlecenie_create_kontroler.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/content/bootstrap-grid.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/content/bootstrap-grid.css.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/content/bootstrap-grid.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/content/bootstrap-grid.min.css.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/content/bootstrap-reboot.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/content/bootstrap-reboot.css.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/content/bootstrap-reboot.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/content/bootstrap-reboot.min.css.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/content/bootstrap.css.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/content/bootstrap.min.css.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/content/user.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/scripts/bootstrap.bundle.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/scripts/bootstrap.bundle.js.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/scripts/bootstrap.bundle.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/scripts/bootstrap.bundle.min.js.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/scripts/bootstrap.js.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/scripts/bootstrap.min.js.map" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Account_app/migrations/0003_auto_20171211_1041.py" afterPath="" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Info_app/apps.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Login_app/forms.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Login_app/templates/Login_app/login.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Login_app/templates/Login_app/loginpartial.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Login_app/templates/Login_app/singup.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/scripts/_references.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/scripts/jquery-1.10.2.intellisense.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/scripts/jquery-1.10.2.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/scripts/jquery-1.10.2.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/scripts/jquery-1.10.2.min.map" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/scripts/jquery.validate-vsdoc.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/scripts/jquery.validate.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/scripts/jquery.validate.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/scripts/jquery.validate.unobtrusive.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/scripts/jquery.validate.unobtrusive.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/scripts/modernizr-2.6.2.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/scripts/respond.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/scripts/respond.min.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Account_app/migrations/0001_initial.py" afterPath="$PROJECT_DIR$/Account_app/migrations/0001_initial.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Account_app/models.py" afterPath="$PROJECT_DIR$/Account_app/models.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Account_app/templates/Account_app/account_view.html" afterPath="$PROJECT_DIR$/Account_app/templates/Account_app/account_view.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Account_app/views.py" afterPath="$PROJECT_DIR$/Account_app/views.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Adres_app/models.py" afterPath="$PROJECT_DIR$/Adres_app/models.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Web_System/settings.py" afterPath="$PROJECT_DIR$/Web_System/settings.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Zlecenie_app/views.py" afterPath="$PROJECT_DIR$/Zlecenie_app/views.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/layout.html" afterPath="$PROJECT_DIR$/templates/layout.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/loginpartial.html" afterPath="$PROJECT_DIR$/templates/loginpartial.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Account_app/migrations/0002_userprofile_image.py" afterPath="$PROJECT_DIR$/Account_app/migrations/0002_auto_20180106_1314.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -102,8 +85,8 @@
       <file leaf-file-name="bootstrap.bundle.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/static/scripts/bootstrap.bundle.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="192">
-              <caret line="5791" column="35" lean-forward="false" selection-start-line="5791" selection-start-column="35" selection-end-line="5791" selection-end-column="35" />
+            <state relative-caret-position="413">
+              <caret line="5804" column="54" lean-forward="true" selection-start-line="5804" selection-start-column="54" selection-end-line="5804" selection-end-column="54" />
               <folding />
             </state>
           </provider>
@@ -360,6 +343,87 @@
             <path>
               <item name="Web_System" type="b2602c69:ProjectViewProjectNode" />
               <item name="Web_System" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Web_System" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Web_System" type="462c0819:PsiDirectoryNode" />
+              <item name="Account_app" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Web_System" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Web_System" type="462c0819:PsiDirectoryNode" />
+              <item name="Account_app" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Web_System" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Web_System" type="462c0819:PsiDirectoryNode" />
+              <item name="Account_app" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+              <item name="Account_app" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Web_System" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Web_System" type="462c0819:PsiDirectoryNode" />
+              <item name="Adres_app" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Web_System" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Web_System" type="462c0819:PsiDirectoryNode" />
+              <item name="Adres_app" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Web_System" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Web_System" type="462c0819:PsiDirectoryNode" />
+              <item name="Adres_app" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+              <item name="Adres_app" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Web_System" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Web_System" type="462c0819:PsiDirectoryNode" />
+              <item name="Info_app" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Web_System" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Web_System" type="462c0819:PsiDirectoryNode" />
+              <item name="Info_app" type="462c0819:PsiDirectoryNode" />
+              <item name="migrations" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Web_System" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Web_System" type="462c0819:PsiDirectoryNode" />
+              <item name="Info_app" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Web_System" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Web_System" type="462c0819:PsiDirectoryNode" />
+              <item name="Info_app" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+              <item name="Info_app" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Web_System" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Web_System" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Web_System" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Web_System" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Web_System" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Web_System" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+              <item name="registration" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Web_System" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Web_System" type="462c0819:PsiDirectoryNode" />
+              <item name="Zlecenie_app" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -651,14 +715,14 @@
   <component name="ToolWindowManager">
     <frame x="-1688" y="-18" width="1696" height="1066" extended-state="6" />
     <layout>
-      <window_info id="TODO" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32762313" sideWeight="0.49394855" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3961456" sideWeight="0.5323961" order="11" side_tool="true" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32762313" sideWeight="0.49394855" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32869378" sideWeight="0.50488997" order="11" side_tool="true" content_ui="tabs" />
       <window_info id="manage.py@Web_System" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32869378" sideWeight="0.494705" order="12" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3961456" sideWeight="0.46760392" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32869378" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3961456" sideWeight="0.4651589" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32869378" sideWeight="0.49511003" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32762313" sideWeight="0.48033282" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Mongo Explorer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3294621" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32762313" sideWeight="0.49394855" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32762313" sideWeight="0.47860634" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19070904" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32885087" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32475883" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -667,12 +731,27 @@
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.19033675" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32762313" sideWeight="0.49394855" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3961456" sideWeight="0.5323961" order="11" side_tool="true" content_ui="tabs" />
+      <window_info id="manage.py@Web_System" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32869378" sideWeight="0.494705" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3961456" sideWeight="0.46760392" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32869378" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32762313" sideWeight="0.48033282" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Mongo Explorer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3294621" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32762313" sideWeight="0.49394855" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19070904" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32885087" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32475883" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24810892" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3993576" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.19033675" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32762313" sideWeight="0.49394855" order="6" side_tool="false" content_ui="tabs" />
@@ -779,13 +858,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Adres_app/templates/Adres_app/adres_form.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" column="40" lean-forward="true" selection-start-line="17" selection-start-column="40" selection-end-line="17" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Account_app/templates/Account_app/view_form.html" />
     <entry file="file://$PROJECT_DIR$/Zlecenie_app/templates/Zlecenie_app/tmp.html">
       <provider selected="true" editor-type-id="text-editor">
@@ -798,20 +870,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
           <caret line="5" column="25" lean-forward="false" selection-start-line="5" selection-start-column="25" selection-end-line="5" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Info_app/templates/Info_app/about.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Info_app/templates/Info_app/contact.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -884,9 +942,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
           <caret line="12" column="15" lean-forward="true" selection-start-line="12" selection-start-column="15" selection-end-line="12" selection-end-column="15" />
-          <folding>
-            <element signature="n#div#1;n#div#1;n#!!top" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1062,7 +1118,7 @@
         <state relative-caret-position="255">
           <caret line="15" column="55" lean-forward="true" selection-start-line="15" selection-start-column="55" selection-end-line="15" selection-end-column="55" />
           <folding>
-            <element signature="n#style#0;n#form#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#form#0;n#!!top" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1082,7 +1138,7 @@
         <state relative-caret-position="112">
           <caret line="14" column="34" lean-forward="false" selection-start-line="14" selection-start-column="34" selection-end-line="14" selection-end-column="34" />
           <folding>
-            <element signature="e#29#86#0" expanded="true" />
+            <element signature="e#29#86#0" expanded="false" />
             <element signature="e#418#997#0" expanded="false" />
             <element signature="e#1098#1475#0" expanded="false" />
           </folding>
@@ -1178,10 +1234,34 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Info_app/templates/Info_app/contact.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Info_app/templates/Info_app/about.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Info_app/apps.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="21" lean-forward="true" selection-start-line="4" selection-start-column="21" selection-end-line="4" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/static/scripts/bootstrap.bundle.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="192">
-          <caret line="5791" column="35" lean-forward="false" selection-start-line="5791" selection-start-column="35" selection-end-line="5791" selection-end-column="35" />
+        <state relative-caret-position="413">
+          <caret line="5804" column="54" lean-forward="true" selection-start-line="5804" selection-start-column="54" selection-end-line="5804" selection-end-column="54" />
           <folding />
         </state>
       </provider>
