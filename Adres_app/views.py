@@ -3,6 +3,7 @@ Definition of views.
 """
 from django.contrib.auth.decorators import login_required
 from django.core.urlresolvers import reverse_lazy
+from django.db.models import Q
 from django.http import HttpResponseRedirect
 from django.utils.decorators import method_decorator
 from django.views import generic
@@ -16,7 +17,19 @@ class AdresView(generic.ListView):
     context_object_name = 'lista_adresow'
 
     def get_queryset(self):
-        return Adres.objects.filter(user=self.request.user)
+        lista_adresow = Adres.objects.filter(user=self.request.user)
+        query = self.request.GET.get("q")
+        qmiasto = self.request.GET.get("qmiasto")
+        if query:
+            return lista_adresow.filter(
+                Q(nazwa__icontains=query)
+            ).distinct()
+        if qmiasto:
+            return lista_adresow.filter(
+                Q(miasto__icontains=qmiasto)
+            ).distinct()
+        else:
+            return lista_adresow
 
 
 @method_decorator(login_required, name='dispatch')

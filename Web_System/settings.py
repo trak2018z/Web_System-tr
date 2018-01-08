@@ -28,6 +28,7 @@ INSTALLED_APPS = [
     'Adres_app',
     'Zlecenie_app',
     'widget_tweaks',
+
 ]
 
 MIDDLEWARE = [

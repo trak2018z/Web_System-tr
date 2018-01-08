@@ -4,13 +4,13 @@ Definition of views.
 
 from django.contrib.auth.decorators import login_required
 from django.core.urlresolvers import reverse_lazy
+from django.db.models import Q
 from django.http import HttpResponseRedirect
 from django.utils.decorators import method_decorator
 from django.views import generic
 
 from Adres_app.models import Adres
 from Zlecenie_app.forms import ZleceniaForm
-# from Zlecenie_app.forms import ZleceniaForm, AdresForm
 from .models import Zlecenie
 
 
@@ -22,7 +22,25 @@ class ZleceniaListView(generic.ListView):
     def get_queryset(self):
         if not self.request.user.groups.filter(name='Klient').exists():
             self.template_name = 'Zlecenie_app/zlecenie_kontroler_list.html'
-            return Zlecenie.objects.all()
+            intquery = self.request.GET.get("qint")
+            strquery = self.request.GET.get("qstr")
+            namequery = self.request.GET.get("qname")
+            if intquery:
+                return Zlecenie.objects.filter(
+                    Q(id=intquery)
+                    # |Q(status_zlecenia=intquery)
+                ).distinct()
+            if strquery:
+                return Zlecenie.objects.filter(
+                    Q(user__username__icontains=strquery)
+                ).distinct()
+            if namequery:
+                return Zlecenie.objects.filter(
+                    Q(user__first_name__icontains=namequery) |
+                    Q(user__last_name__icontains=namequery)
+                ).distinct()
+            else:
+                return Zlecenie.objects.all()
         else:
             self.template_name = 'Zlecenie_app/zlecenie_list.html'
             return Zlecenie.objects.filter(user=self.request.user)
@@ -77,7 +95,7 @@ class ZlecenieCreateView(generic.CreateView):
     def form_valid(self, form):
         user = self.request.user
         form.instance.user = user
-        #form.fields['adres_odbioru'] = Adres.objects.filter(user=user)
+        # form.fields['adres_odbioru'] = Adres.objects.filter(user=user)
         self.object = form.save()
         # send_mail('subject', 'body of the message', 'noreply@bottlenose.co', ['vitor@freitas.com'])
         return HttpResponseRedirect(self.get_success_url())
